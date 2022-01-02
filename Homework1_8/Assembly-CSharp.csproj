@@ -53,8 +53,11 @@
     <UnityVersion>2020.3.21f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\ObjectRotation.cs" />
     <Compile Include="Assets\Scripts\Rotation.cs" />
+    <Compile Include="Assets\Scripts\VectorAddition.cs" />
+    <Compile Include="Assets\Scripts\VectorSubstraction.cs" />
+    <Compile Include="Assets\Scripts\VectorMultiplication.cs" />
+    <Compile Include="Assets\Scripts\DistanceBetweenObjects.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
