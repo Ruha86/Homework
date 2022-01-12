@@ -1,123 +1,123 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.25f1 (9b9180224418) revision 10195328'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19043) 64bit Professional' Language: 'ru' Physical Memory: 16304 MB
+OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'ru' Physical Memory: 16283 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Microsoft Visual Studio 9.0\2020.3.25f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2020.3.25f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/UsersData/LearningUnity/Homework/Homework1_10
+D:/NTI_Learning_CSharp_Unity/Homework/Homework1_10
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-55944
-Successfully changed project path to: C:/UsersData/LearningUnity/Homework/Homework1_10
-C:/UsersData/LearningUnity/Homework/Homework1_10
+57465
+Successfully changed project path to: D:/NTI_Learning_CSharp_Unity/Homework/Homework1_10
+D:/NTI_Learning_CSharp_Unity/Homework/Homework1_10
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 33.33 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 66.51 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.25f1 (9b9180224418)
-[Subsystems] Discovering subsystems at path C:/Program Files/Microsoft Visual Studio 9.0/2020.3.25f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/UsersData/LearningUnity/Homework/Homework1_10/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.25f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/NTI_Learning_CSharp_Unity/Homework/Homework1_10/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1060 6GB (ID=0x1b83)
+    Renderer: Radeon RX 580 Series (ID=0x67df)
     Vendor:   
-    VRAM:     6052 MB
-    Driver:   30.0.14.9709
+    VRAM:     4075 MB
+    Driver:   27.20.1034.6
 Initialize mono
-Mono path[0] = 'C:/Program Files/Microsoft Visual Studio 9.0/2020.3.25f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Microsoft Visual Studio 9.0/2020.3.25f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Program Files/Microsoft Visual Studio 9.0/2020.3.25f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56424
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.25f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.25f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.25f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56520
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Microsoft Visual Studio 9.0/2020.3.25f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001828 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.25f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004846 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 32.40 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 66.60 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.480 seconds
+- Completed reload, in  1.114 seconds
 Domain Reload Profiling:
-	ReloadAssembly (480ms)
-		BeginReloadAssembly (46ms)
+	ReloadAssembly (1115ms)
+		BeginReloadAssembly (132ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (373ms)
-			LoadAssemblies (44ms)
+		EndReloadAssembly (841ms)
+			LoadAssemblies (128ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (126ms)
+			SetupTypeCache (294ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (25ms)
-			SetupLoadedEditorAssemblies (138ms)
+			RebuildScriptCaches (63ms)
+			SetupLoadedEditorAssemblies (312ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (32ms)
-				BeforeProcessingInitializeOnLoad (13ms)
-				ProcessInitializeOnLoadAttributes (66ms)
-				ProcessInitializeOnLoadMethodAttributes (22ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (67ms)
+				BeforeProcessingInitializeOnLoad (29ms)
+				ProcessInitializeOnLoadAttributes (150ms)
+				ProcessInitializeOnLoadMethodAttributes (57ms)
 				AfterProcessingInitializeOnLoad (0ms)
-				EditorAssembliesLoaded (0ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004128 seconds.
+Registered in 0.009426 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.36 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.69 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.860 seconds
+- Completed reload, in  1.945 seconds
 Domain Reload Profiling:
-	ReloadAssembly (861ms)
-		BeginReloadAssembly (122ms)
+	ReloadAssembly (1946ms)
+		BeginReloadAssembly (289ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (15ms)
-		EndReloadAssembly (686ms)
-			LoadAssemblies (74ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (1536ms)
+			LoadAssemblies (195ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (238ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (262ms)
+			SetupTypeCache (552ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (92ms)
+			SetupLoadedEditorAssemblies (571ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (73ms)
-				ProcessInitializeOnLoadAttributes (171ms)
-				ProcessInitializeOnLoadMethodAttributes (7ms)
-				AfterProcessingInitializeOnLoad (6ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (152ms)
+				ProcessInitializeOnLoadAttributes (375ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (17ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.36 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1894 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 96.6 MB.
-System memory in use after: 96.6 MB.
+System memory in use before: 97.0 MB.
+System memory in use after: 97.0 MB.
 
 Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2346.
-Total: 2.577100 ms (FindLiveObjects: 0.117800 ms CreateObjectMapping: 0.049200 ms MarkObjects: 2.343100 ms  DeleteObjects: 0.066300 ms)
+Total: 3.944400 ms (FindLiveObjects: 0.267000 ms CreateObjectMapping: 0.106000 ms MarkObjects: 3.440300 ms  DeleteObjects: 0.129800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -131,769 +131,806 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/2D Art/Cover-Image.png
-  artifactKey: Guid(cb561e4ce72f6374f808e0fb77307268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Art/Cover-Image.png using Guid(cb561e4ce72f6374f808e0fb77307268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aca3d07df2c1bcc4c14306a02d533c07') in 0.073214 seconds 
-  Import took 0.075595 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000243 seconds.
-  path: Assets/2D Art/ui_layout.png
-  artifactKey: Guid(4f26dcded4e17504da9c887873840fcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Art/ui_layout.png using Guid(4f26dcded4e17504da9c887873840fcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99db827e2d3f6cfb5a212f91c0828e7a') in 0.013840 seconds 
-  Import took 0.016336 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000251 seconds.
-  path: Assets/2D Art/ui_spritesheet.png
-  artifactKey: Guid(a476bcac7f625c346b3ada58abac3280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Art/ui_spritesheet.png using Guid(a476bcac7f625c346b3ada58abac3280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6006ee9a191c042a8612e234d0bedb56') in 0.155872 seconds 
-  Import took 0.159018 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 877.979905 seconds.
-  path: Assets/ANGRY MESH/Snowman
-  artifactKey: Guid(0af01ebed68a95d4daa00e92ebd0fc45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ANGRY MESH/Snowman using Guid(0af01ebed68a95d4daa00e92ebd0fc45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dcde6e7da11087a14909205379c4e4f') in 0.004730 seconds 
-  Import took 0.007927 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002125 seconds.
-  path: Assets/_My Assets/Models/House/Materials/wood Window.mat
-  artifactKey: Guid(1fcde310be7ba7544861cdc7de44f2bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_My Assets/Models/House/Materials/wood Window.mat using Guid(1fcde310be7ba7544861cdc7de44f2bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17fc1256c01dd8515af59e93aed50a1a') in 0.222408 seconds 
-  Import took 0.224963 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002041 seconds.
-  path: Assets/Handpainted_Forest_pack/Models/Source
-  artifactKey: Guid(e498414b9c21d944aa3bba1049aefb95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Handpainted_Forest_pack/Models/Source using Guid(e498414b9c21d944aa3bba1049aefb95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ee8f1f39546538098ddeec5abc66487') in 0.004188 seconds 
-  Import took 0.006598 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.008469 seconds.
-  path: Assets/ANGRY MESH/Snowman/Sources/Textures/Snowman_Albedo_01 (A Smoothness).tga
-  artifactKey: Guid(af34d5250cbec6048ada82f96fd8eb2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ANGRY MESH/Snowman/Sources/Textures/Snowman_Albedo_01 (A Smoothness).tga using Guid(af34d5250cbec6048ada82f96fd8eb2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3fddb1afdd634acfa8e3fc8bfcc04a2') in 0.021616 seconds 
-  Import took 0.024152 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.044110 seconds.
-  path: Assets/Handpainted_Forest_pack/Models/Source/Pine_v1.png
-  artifactKey: Guid(330a76c3c3267334ba963ed9bc5d2f1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Handpainted_Forest_pack/Models/Source/Pine_v1.png using Guid(330a76c3c3267334ba963ed9bc5d2f1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2798931e755585c9733fe3ad2d8c5ab') in 0.008399 seconds 
-  Import took 0.010922 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004875 seconds.
-  path: Assets/Handpainted_Forest_pack/Models/Grass_v1_3.prefab
-  artifactKey: Guid(4b46a3851f431d14fb24389945dd98d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Handpainted_Forest_pack/Models/Grass_v1_3.prefab using Guid(4b46a3851f431d14fb24389945dd98d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61bb59ba0affe60f76492b11cc003b71') in 0.121741 seconds 
-  Import took 0.124309 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.007714 seconds.
-  path: Assets/Handpainted_Forest_pack/Models/Source/Grass_v1_3.png
-  artifactKey: Guid(23bd24c4031467f4ebfa37ecc611053b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Handpainted_Forest_pack/Models/Source/Grass_v1_3.png using Guid(23bd24c4031467f4ebfa37ecc611053b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '814d04bb43bc9e06ab4f87b55ac82954') in 0.007949 seconds 
-  Import took 0.010429 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.003146 seconds.
-  path: Assets/_My Assets/Models/House/Materials
-  artifactKey: Guid(057807878d495744c9cd38992a917d51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_My Assets/Models/House/Materials using Guid(057807878d495744c9cd38992a917d51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c5be2e76a467b425804dd44bea21c68') in 0.004017 seconds 
-  Import took 0.006480 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004937 seconds.
-  path: Assets/_My Assets/Textures/Frost.jpg
-  artifactKey: Guid(d12993b8397260c44bc4b5dbeaa7ff8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_My Assets/Textures/Frost.jpg using Guid(d12993b8397260c44bc4b5dbeaa7ff8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '014a940138a1060a135461c96048014d') in 0.009670 seconds 
-  Import took 0.012182 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004830 seconds.
-  path: Assets/ANGRY MESH/Snowman/Prefabs/Snowman_03.prefab
-  artifactKey: Guid(9f9523a1db9c56e45a3896f572a17305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ANGRY MESH/Snowman/Prefabs/Snowman_03.prefab using Guid(9f9523a1db9c56e45a3896f572a17305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8280c27dbfb9f148f68133f99487b7b9') in 0.200262 seconds 
-  Import took 0.203263 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.007436 seconds.
-  path: Assets/Scenes
-  artifactKey: Guid(b637b582a6c1b114db9b1ab0c4ffb21f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(b637b582a6c1b114db9b1ab0c4ffb21f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08774aeb29a30d513d2ac6013e09c3f5') in 0.003988 seconds 
-  Import took 0.006535 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004401 seconds.
-  path: Assets/Handpainted_Forest_pack/Models/Source/Forest_pack_models_set.FBX
-  artifactKey: Guid(11513268302b562498f3c140346b22c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Handpainted_Forest_pack/Models/Source/Forest_pack_models_set.FBX using Guid(11513268302b562498f3c140346b22c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5477765f746efd04428973d0bd2f2b1b') in 0.201199 seconds 
-  Import took 0.203837 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004648 seconds.
-  path: Assets/_My Assets/Materials/Snow.mat
-  artifactKey: Guid(38eaf24538caa184d99c7514dabd9db1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_My Assets/Materials/Snow.mat using Guid(38eaf24538caa184d99c7514dabd9db1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd0f34d477148e3c88f9e99d6ebe266b') in 0.009372 seconds 
-  Import took 0.011912 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004714 seconds.
-  path: Assets/Handpainted_Forest_pack/Models/Source/Grass_v2_1.mat
-  artifactKey: Guid(59871923837676c4faba6f9673ff6d79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Handpainted_Forest_pack/Models/Source/Grass_v2_1.mat using Guid(59871923837676c4faba6f9673ff6d79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '952e582f5421a57dfe352e62b3b14d90') in 0.010375 seconds 
-  Import took 0.012939 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004698 seconds.
-  path: Assets/_My Assets/Models/House/Materials/WoodenLogs.mat
-  artifactKey: Guid(d89b59a6281829f4ba864b257cca2683) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_My Assets/Models/House/Materials/WoodenLogs.mat using Guid(d89b59a6281829f4ba864b257cca2683) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4ccbb741bcc3b2d11b5aa4d69a69ce3') in 0.009657 seconds 
-  Import took 0.012204 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.003183 seconds.
-  path: Assets/_My Assets/Models/House
-  artifactKey: Guid(f8b261f400af5b143a51b02f4278ac4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_My Assets/Models/House using Guid(f8b261f400af5b143a51b02f4278ac4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5c02676a108dffb694e20e5e3e49c1b') in 0.003907 seconds 
-  Import took 0.006674 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002773 seconds.
-  path: Assets/ANGRY MESH/Snowman/Sources
-  artifactKey: Guid(481bcb1eaaa59474080c70e2af878272) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ANGRY MESH/Snowman/Sources using Guid(481bcb1eaaa59474080c70e2af878272) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2992634992d11c1cae8f3505678b97e2') in 0.003957 seconds 
-  Import took 0.006353 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002778 seconds.
-  path: Assets/_My Assets/Models/SnowMan
-  artifactKey: Guid(b20b688685328b847a0d12e721e1b406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_My Assets/Models/SnowMan using Guid(b20b688685328b847a0d12e721e1b406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74b0b1a896f684a1114dc784ba6827bb') in 0.003983 seconds 
-  Import took 0.006380 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004282 seconds.
-  path: Assets/ANGRY MESH/Snowman/Sources/Materials/Snowman_03.mat
-  artifactKey: Guid(4cac6c2aa1a2e7e42adc553f43c3ea63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ANGRY MESH/Snowman/Sources/Materials/Snowman_03.mat using Guid(4cac6c2aa1a2e7e42adc553f43c3ea63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b36363f08e3a225787c26ea5470d5df5') in 0.021116 seconds 
-  Import took 0.024071 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004667 seconds.
-  path: Assets/Handpainted_Forest_pack/Models/Source/Grass_v1_1.png
-  artifactKey: Guid(d41ffe9d7aae5874c81a5edf96a4781e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Handpainted_Forest_pack/Models/Source/Grass_v1_1.png using Guid(d41ffe9d7aae5874c81a5edf96a4781e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '630bd80d12c3020947bee00d0eb3056d') in 0.012992 seconds 
-  Import took 0.015537 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.005124 seconds.
-  path: Assets/_My Assets/Textures/rooftilesceramic-3.jpg
-  artifactKey: Guid(ce51b673835af3741b5f560421dfeac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_My Assets/Textures/rooftilesceramic-3.jpg using Guid(ce51b673835af3741b5f560421dfeac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40384e726b06b9ce921f97cc8acbdef1') in 0.009118 seconds 
-  Import took 0.011663 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004988 seconds.
-  path: Assets/_My Assets/Textures/snow-25.jpg
-  artifactKey: Guid(913c9b9dc788f3440b27468313c36029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_My Assets/Textures/snow-25.jpg using Guid(913c9b9dc788f3440b27468313c36029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12b9bc3af210f22531acbf06a138a329') in 0.007781 seconds 
-  Import took 0.010321 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.009638 seconds.
-  path: Assets/ANGRY MESH/Snowman/Sources/Textures/Snowman_Normal.tga
-  artifactKey: Guid(055d1b601cc34484999b606bf65b1da3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ANGRY MESH/Snowman/Sources/Textures/Snowman_Normal.tga using Guid(055d1b601cc34484999b606bf65b1da3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc37314166b7e1954d7c7b9c4d2c0c98') in 0.013217 seconds 
-  Import took 0.016051 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004739 seconds.
-  path: Assets/Handpainted_Forest_pack/Models/Source/Grass_v2_1.png
-  artifactKey: Guid(c21ba585cdeba2c4599d076364526015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Handpainted_Forest_pack/Models/Source/Grass_v2_1.png using Guid(c21ba585cdeba2c4599d076364526015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20b640be369e8ec98d45ce29498e5d0d') in 0.008834 seconds 
-  Import took 0.011415 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004605 seconds.
-  path: Assets/Handpainted_Forest_pack/Models/Source/Floor_Grass_v1_1.mat
-  artifactKey: Guid(ff877304ec6ab8d4ba4c9b6a346c5775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Handpainted_Forest_pack/Models/Source/Floor_Grass_v1_1.mat using Guid(ff877304ec6ab8d4ba4c9b6a346c5775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd736f05e22245caa1398e86b7e904278') in 0.079112 seconds 
-  Import took 0.081692 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.005745 seconds.
-  path: Assets/_My Assets/Models/SnowMan/SnowMan.prefab
-  artifactKey: Guid(5d30207e6dc20c247acc4e37e5705087) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_My Assets/Models/SnowMan/SnowMan.prefab using Guid(5d30207e6dc20c247acc4e37e5705087) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2002016a3c23fe15779179e9c2197067') in 0.049451 seconds 
-  Import took 0.052455 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002733 seconds.
-  path: Assets/_My Assets
-  artifactKey: Guid(586179ac3d08da34ca0c7bc05c91084b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_My Assets using Guid(586179ac3d08da34ca0c7bc05c91084b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a60170adc5d9e07626bb1bc8dae07e1') in 0.003883 seconds 
-  Import took 0.006212 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.010449 seconds.
-  path: Assets/ANGRY MESH/Snowman/Sources/Textures/Ground_Snow_Albedo.tga
-  artifactKey: Guid(b620524d595fc1a46b86ba918c279994) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ANGRY MESH/Snowman/Sources/Textures/Ground_Snow_Albedo.tga using Guid(b620524d595fc1a46b86ba918c279994) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce80fc34d9b511fbfae48294628f5910') in 0.010572 seconds 
-  Import took 0.013146 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004586 seconds.
-  path: Assets/_My Assets/Models/House/Materials/wood-1-mini.mat
-  artifactKey: Guid(337ee466852378841a579eec6352d357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_My Assets/Models/House/Materials/wood-1-mini.mat using Guid(337ee466852378841a579eec6352d357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ff4a86da3e0baefbc8c77a87ec6ccce') in 0.010745 seconds 
-  Import took 0.013289 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004679 seconds.
-  path: Assets/ANGRY MESH/Snowman/Prefabs/Snow_Particles.prefab
-  artifactKey: Guid(4ca04dc9501451e498e3f029e625ccaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ANGRY MESH/Snowman/Prefabs/Snow_Particles.prefab using Guid(4ca04dc9501451e498e3f029e625ccaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68c214f767733588d2734908daf0a27e') in 0.030413 seconds 
-  Import took 0.033038 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.009923 seconds.
-  path: Assets/ANGRY MESH/Snowman/Sources/Textures/Ground_Snow_NM.tga
-  artifactKey: Guid(9065286a47514d84ea14865372fef43f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ANGRY MESH/Snowman/Sources/Textures/Ground_Snow_NM.tga using Guid(9065286a47514d84ea14865372fef43f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cad79c2a5ec73ff34aff7e0e417c8f3e') in 0.011323 seconds 
-  Import took 0.013879 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004654 seconds.
-  path: Assets/_My Assets/Models/SnowMan/Materials/Carrot.mat
-  artifactKey: Guid(ed545d83e4060b044a64baf3c36b806a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_My Assets/Models/SnowMan/Materials/Carrot.mat using Guid(ed545d83e4060b044a64baf3c36b806a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '176f08eafd28241631a122f601138c43') in 0.009388 seconds 
-  Import took 0.011927 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.003063 seconds.
-  path: Assets/ANGRY MESH/Snowman/Sources/Meshes
-  artifactKey: Guid(162bd42896aef7c418803a0ff667ed67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ANGRY MESH/Snowman/Sources/Meshes using Guid(162bd42896aef7c418803a0ff667ed67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ddb4119f838f349e28a80b190b3885b') in 0.004150 seconds 
-  Import took 0.006590 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004342 seconds.
-  path: Assets/ANGRY MESH/Snowman/Sources/Materials/Snow_Particles.mat
-  artifactKey: Guid(5850c4fb0bfafcb4b9572bbd9189bbdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ANGRY MESH/Snowman/Sources/Materials/Snow_Particles.mat using Guid(5850c4fb0bfafcb4b9572bbd9189bbdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac14c26e77c0dbf59539c4065177b190') in 0.009874 seconds 
-  Import took 0.012374 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004662 seconds.
-  path: Assets/ANGRY MESH/Snowman/Sources/Materials/Skybox.mat
-  artifactKey: Guid(0045384acbb78fa4caea18b87f4aaa94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ANGRY MESH/Snowman/Sources/Materials/Skybox.mat using Guid(0045384acbb78fa4caea18b87f4aaa94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52135704870c7fe0b275d68126063c01') in 0.076336 seconds 
-  Import took 0.078873 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.005467 seconds.
-  path: Assets/_My Assets/Textures/snow-23.jpg
-  artifactKey: Guid(845e62efc5b70d740b8874229a497d51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_My Assets/Textures/snow-23.jpg using Guid(845e62efc5b70d740b8874229a497d51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27b7b81597e10ba67fcd074aa94a5bf1') in 0.007298 seconds 
-  Import took 0.009936 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.003193 seconds.
-  path: Assets/ANGRY MESH/Snowman/Prefabs
-  artifactKey: Guid(b0c2d5c87589b92459b1694c235486aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ANGRY MESH/Snowman/Prefabs using Guid(b0c2d5c87589b92459b1694c235486aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f78eab202ad8bef9261d13145bb750ba') in 0.004205 seconds 
-  Import took 0.006754 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004562 seconds.
-  path: Assets/ANGRY MESH/Snowman/Prefabs/Snowman_02.prefab
-  artifactKey: Guid(7c1543f51c5b8cc488fc53ab3cbffbb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ANGRY MESH/Snowman/Prefabs/Snowman_02.prefab using Guid(7c1543f51c5b8cc488fc53ab3cbffbb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99d770d995b0d1853a04b24f196805da') in 0.017571 seconds 
-  Import took 0.020591 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004872 seconds.
-  path: Assets/_My Assets/Models/House/Materials/Wooden Logs.mat
-  artifactKey: Guid(41115318aa1cda64d8f1ac40238f0ec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_My Assets/Models/House/Materials/Wooden Logs.mat using Guid(41115318aa1cda64d8f1ac40238f0ec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c45752a92ff03a96e5c7d261c1ea330d') in 0.158712 seconds 
-  Import took 0.161303 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004692 seconds.
-  path: Assets/Handpainted_Forest_pack/Models/Floor_Grass_v1_2.prefab
-  artifactKey: Guid(a2fbc4036fe0e9f40899ea784ee93073) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Handpainted_Forest_pack/Models/Floor_Grass_v1_2.prefab using Guid(a2fbc4036fe0e9f40899ea784ee93073) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73af999aa75d7c0622723a8cb6a5a002') in 0.009820 seconds 
-  Import took 0.012415 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.003326 seconds.
-  path: Assets/ANGRY MESH/Snowman/Sources/Textures
-  artifactKey: Guid(884a8eba889a7554b951ba4e3b9cf27d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ANGRY MESH/Snowman/Sources/Textures using Guid(884a8eba889a7554b951ba4e3b9cf27d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04ff6145006075111ddf4afcf38d1331') in 0.003906 seconds 
-  Import took 0.006647 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002764 seconds.
-  path: Assets/Handpainted_Forest_pack/Models
-  artifactKey: Guid(e6ef26e78701f704582bb1f8938086d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Handpainted_Forest_pack/Models using Guid(e6ef26e78701f704582bb1f8938086d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f89ecc0fdb1966b63a6b51f08d7d962') in 0.003902 seconds 
-  Import took 0.006287 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004301 seconds.
-  path: Assets/ANGRY MESH/Snowman/Prefabs/Snowman_01.prefab
-  artifactKey: Guid(af67ec531803f32419e99a1b4efdb52d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ANGRY MESH/Snowman/Prefabs/Snowman_01.prefab using Guid(af67ec531803f32419e99a1b4efdb52d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8793ac5261236c97865f49c588e493a2') in 0.018602 seconds 
-  Import took 0.021552 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004749 seconds.
-  path: Assets/Handpainted_Forest_pack/Models/Pine_v1_2.prefab
-  artifactKey: Guid(07232b84fecc54e45b2e071b6885bb96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Handpainted_Forest_pack/Models/Pine_v1_2.prefab using Guid(07232b84fecc54e45b2e071b6885bb96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dd63e84179b7ccb5a43139197101ba0') in 0.010506 seconds 
-  Import took 0.013117 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.003146 seconds.
-  path: Assets/ANGRY MESH/Snowman/Sources/Materials
-  artifactKey: Guid(e711831e945403842b0cc72134f4a5be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ANGRY MESH/Snowman/Sources/Materials using Guid(e711831e945403842b0cc72134f4a5be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81c8375c99fa36dbd2b2dbea6e9a592c') in 0.001468 seconds 
-  Import took 0.003870 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002810 seconds.
-  path: Assets/_My Assets/Textures
-  artifactKey: Guid(e7d49c4d8f0aa4a4982e0e72d91c7c41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_My Assets/Textures using Guid(e7d49c4d8f0aa4a4982e0e72d91c7c41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15eecb125e948f198d751bacac035b61') in 0.001417 seconds 
-  Import took 0.003694 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.005942 seconds.
-  path: Assets/Handpainted_Forest_pack/Models/Source/Floor_Grass_v1_2.tga
-  artifactKey: Guid(7be934018fb10d640ae99ae9bf7cbe7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Handpainted_Forest_pack/Models/Source/Floor_Grass_v1_2.tga using Guid(7be934018fb10d640ae99ae9bf7cbe7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a7ad2c9da7e78f6cfe8bf353ea5ce83') in 0.009719 seconds 
-  Import took 0.012199 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004630 seconds.
-  path: Assets/Handpainted_Forest_pack/Models/Grass_v1_2.prefab
-  artifactKey: Guid(e7943b8da41d75045a6bd919f15691ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Handpainted_Forest_pack/Models/Grass_v1_2.prefab using Guid(e7943b8da41d75045a6bd919f15691ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '093e0eff17e3098bdb8c6d3fd6fac03e') in 0.010299 seconds 
-  Import took 0.012894 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004623 seconds.
-  path: Assets/Handpainted_Forest_pack/Models/Source/Grass_v1_2.png
-  artifactKey: Guid(8d4abee17d6b77d47b140f7df6ea81af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Handpainted_Forest_pack/Models/Source/Grass_v1_2.png using Guid(8d4abee17d6b77d47b140f7df6ea81af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccb0ff8b9f532780e5f09476dd7a1546') in 0.007404 seconds 
-  Import took 0.009913 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004678 seconds.
-  path: Assets/_My Assets/Models/House/Materials/rooftilesceramic-3.mat
-  artifactKey: Guid(ff72be22f8a7a2a48928198ec1d94df4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_My Assets/Models/House/Materials/rooftilesceramic-3.mat using Guid(ff72be22f8a7a2a48928198ec1d94df4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ffa569d48069d8737503e31a77727b0') in 0.010178 seconds 
-  Import took 0.012727 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004763 seconds.
-  path: Assets/Handpainted_Forest_pack/Models/Source/Grass_v1_3.mat
-  artifactKey: Guid(628ed950aa8383043806c5458764725f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Handpainted_Forest_pack/Models/Source/Grass_v1_3.mat using Guid(628ed950aa8383043806c5458764725f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ef59e73e86bdeb423a2b32664dfb3ae') in 0.010186 seconds 
-  Import took 0.012724 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004697 seconds.
-  path: Assets/Handpainted_Forest_pack/Models/Source/Grass_v1_1.mat
-  artifactKey: Guid(1523a0f878da8e44aa9166a0a9553429) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Handpainted_Forest_pack/Models/Source/Grass_v1_1.mat using Guid(1523a0f878da8e44aa9166a0a9553429) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d919811e6cb23228e75b29ea7ee2f1d') in 0.008201 seconds 
-  Import took 0.010925 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.008839 seconds.
-  path: Assets/_My Assets/Textures/wood-1-mini.jpg
-  artifactKey: Guid(8acd44bad2fcb0b499501963f433e7d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_My Assets/Textures/wood-1-mini.jpg using Guid(8acd44bad2fcb0b499501963f433e7d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e8d3adc3f7326326befac81eff736df') in 0.008877 seconds 
-  Import took 0.011413 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.007113 seconds.
   path: Assets/Scenes/Task_1.unity
   artifactKey: Guid(6f4a2b30d6b4abc4ea830bf785ff3ff9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Task_1.unity using Guid(6f4a2b30d6b4abc4ea830bf785ff3ff9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34aea5ce9d77be45a4c307a2bd07c7a7') in 0.004627 seconds 
-  Import took 0.007103 seconds .
+Start importing Assets/Scenes/Task_1.unity using Guid(6f4a2b30d6b4abc4ea830bf785ff3ff9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df9b9e4000f4bdd13d66aaee96e8baac') in 0.023266 seconds 
+  Import took 0.026987 seconds .
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.004271 seconds.
-  path: Assets/Handpainted_Forest_pack/Models/Grass_v2_1.prefab
-  artifactKey: Guid(bca1934b3991fe648b8181db36dfcfcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Handpainted_Forest_pack/Models/Grass_v2_1.prefab using Guid(bca1934b3991fe648b8181db36dfcfcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b58f0eacc4030782c4e126e69613bc0') in 0.008698 seconds 
-  Import took 0.011266 seconds .
+Received Prepare
+Refreshing native plugins compatible for Editor in 6.92 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 57.8 MB.
+System memory in use after: 57.9 MB.
 
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2346.
+Total: 4.644800 ms (FindLiveObjects: 0.278300 ms CreateObjectMapping: 0.100900 ms MarkObjects: 4.188200 ms  DeleteObjects: 0.076200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.004769 seconds.
-  path: Assets/_My Assets/Models/SnowMan/Materials/Black.mat
-  artifactKey: Guid(411f3b2c9603c7e42b51e0209e52d5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_My Assets/Models/SnowMan/Materials/Black.mat using Guid(411f3b2c9603c7e42b51e0209e52d5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1d96fa02a135f040917aa1959f30b30') in 0.008833 seconds 
-  Import took 0.011373 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004887 seconds.
-  path: Assets/_My Assets/Models/SnowMan/Materials/Bucket.mat
-  artifactKey: Guid(5e1a4997428633746ab1e2f577bc9441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_My Assets/Models/SnowMan/Materials/Bucket.mat using Guid(5e1a4997428633746ab1e2f577bc9441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faa48b8289669a7f5097488ca601df75') in 0.009255 seconds 
-  Import took 0.011867 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.003125 seconds.
-  path: Assets/Handpainted_Forest_pack
-  artifactKey: Guid(e05d2f9cf87d6764680f39788b7623aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Handpainted_Forest_pack using Guid(e05d2f9cf87d6764680f39788b7623aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7011b8b5a122ea1590a520d682d9ea8') in 0.004140 seconds 
-  Import took 0.006598 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004279 seconds.
-  path: Assets/Handpainted_Forest_pack/Models/Fir_v1_2.prefab
-  artifactKey: Guid(97fa5d2e177822c4084dda50fa0986c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Handpainted_Forest_pack/Models/Fir_v1_2.prefab using Guid(97fa5d2e177822c4084dda50fa0986c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b206f268a60d6d454623f2b55d5e414') in 0.009375 seconds 
-  Import took 0.012128 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.011207 seconds.
-  path: Assets/ANGRY MESH/Snowman/Sources/Textures/Snowman_Albedo_02 (A Smoothness).tga
-  artifactKey: Guid(2919a2e46981b72499acb6a0502aecec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ANGRY MESH/Snowman/Sources/Textures/Snowman_Albedo_02 (A Smoothness).tga using Guid(2919a2e46981b72499acb6a0502aecec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0297fa224c23a450c907bd4b6c890da5') in 0.011227 seconds 
-  Import took 0.013757 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.005362 seconds.
+  Time since last request: 65.199355 seconds.
   path: Assets/Scenes/Task_2.unity
   artifactKey: Guid(9d0b5a7684fa79a4fa866bb2aae9c92b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Task_2.unity using Guid(9d0b5a7684fa79a4fa866bb2aae9c92b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a7b4d57cc7e014aaff6d65f43580a35') in 0.004661 seconds 
-  Import took 0.007045 seconds .
+Start importing Assets/Scenes/Task_2.unity using Guid(9d0b5a7684fa79a4fa866bb2aae9c92b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18ef533bd56b127e6311070273323fb4') in 0.004515 seconds 
+  Import took 0.008506 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.004218 seconds.
+  Time since last request: 307.482803 seconds.
+  path: Assets/ANGRY MESH/Snowman
+  artifactKey: Guid(0af01ebed68a95d4daa00e92ebd0fc45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANGRY MESH/Snowman using Guid(0af01ebed68a95d4daa00e92ebd0fc45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb103cbefe5b7c9659cce25d6b14d1a7') in 0.004251 seconds 
+  Import took 0.008304 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006416 seconds.
+  path: Assets/_My Assets/Models/House/Materials/wood Window.mat
+  artifactKey: Guid(1fcde310be7ba7544861cdc7de44f2bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_My Assets/Models/House/Materials/wood Window.mat using Guid(1fcde310be7ba7544861cdc7de44f2bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4eb1e4c5a60b892d9ed24082260063ba') in 0.264659 seconds 
+  Import took 0.268357 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007157 seconds.
+  path: Assets/Handpainted_Forest_pack/Models/Source
+  artifactKey: Guid(e498414b9c21d944aa3bba1049aefb95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Handpainted_Forest_pack/Models/Source using Guid(e498414b9c21d944aa3bba1049aefb95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75347f59b6bf50f1f0ffc44f1d9f2174') in 0.003482 seconds 
+  Import took 0.006827 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.023054 seconds.
+  path: Assets/ANGRY MESH/Snowman/Sources/Textures/Snowman_Albedo_01 (A Smoothness).tga
+  artifactKey: Guid(af34d5250cbec6048ada82f96fd8eb2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANGRY MESH/Snowman/Sources/Textures/Snowman_Albedo_01 (A Smoothness).tga using Guid(af34d5250cbec6048ada82f96fd8eb2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c0afa38f439cd1baa3ac70ff850bb19') in 0.054621 seconds 
+  Import took 0.058949 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.009229 seconds.
+  path: Assets/Handpainted_Forest_pack/Models/Source/Pine_v1.png
+  artifactKey: Guid(330a76c3c3267334ba963ed9bc5d2f1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Handpainted_Forest_pack/Models/Source/Pine_v1.png using Guid(330a76c3c3267334ba963ed9bc5d2f1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aea76a56a5410120f8d091c2d058f2f8') in 0.032122 seconds 
+  Import took 0.036003 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.009205 seconds.
+  path: Assets/Handpainted_Forest_pack/Models/Grass_v1_3.prefab
+  artifactKey: Guid(4b46a3851f431d14fb24389945dd98d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Handpainted_Forest_pack/Models/Grass_v1_3.prefab using Guid(4b46a3851f431d14fb24389945dd98d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70edc40c4625dff041b0e5b3e34f769c') in 0.057810 seconds 
+  Import took 0.061549 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008113 seconds.
+  path: Assets/Handpainted_Forest_pack/Models/Source/Grass_v1_3.png
+  artifactKey: Guid(23bd24c4031467f4ebfa37ecc611053b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Handpainted_Forest_pack/Models/Source/Grass_v1_3.png using Guid(23bd24c4031467f4ebfa37ecc611053b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '272fb016647d5245ce58652ea77fa247') in 0.012155 seconds 
+  Import took 0.015998 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005958 seconds.
+  path: Assets/_My Assets/Models/House/Materials
+  artifactKey: Guid(057807878d495744c9cd38992a917d51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_My Assets/Models/House/Materials using Guid(057807878d495744c9cd38992a917d51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd78559cb14062c9b69ebe834b987ab09') in 0.003512 seconds 
+  Import took 0.006687 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006662 seconds.
+  path: Assets/_My Assets/Textures/Frost.jpg
+  artifactKey: Guid(d12993b8397260c44bc4b5dbeaa7ff8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_My Assets/Textures/Frost.jpg using Guid(d12993b8397260c44bc4b5dbeaa7ff8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8a2630c3ce9ba247f7dd50e41460fca') in 0.013791 seconds 
+  Import took 0.017288 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007994 seconds.
+  path: Assets/ANGRY MESH/Snowman/Prefabs/Snowman_03.prefab
+  artifactKey: Guid(9f9523a1db9c56e45a3896f572a17305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANGRY MESH/Snowman/Prefabs/Snowman_03.prefab using Guid(9f9523a1db9c56e45a3896f572a17305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72de254cf2a65e631a774b97aa5428a5') in 0.036692 seconds 
+  Import took 0.040944 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007752 seconds.
+  path: Assets/2D Art/ui_layout.png
+  artifactKey: Guid(4f26dcded4e17504da9c887873840fcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Art/ui_layout.png using Guid(4f26dcded4e17504da9c887873840fcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bdf2cee739cb918b205dc9eee2386b1') in 0.014082 seconds 
+  Import took 0.018022 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005726 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(b637b582a6c1b114db9b1ab0c4ffb21f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(b637b582a6c1b114db9b1ab0c4ffb21f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e7dfeb2cef0a2eecef6665d67f13cc1') in 0.003642 seconds 
+  Import took 0.007075 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006505 seconds.
+  path: Assets/Handpainted_Forest_pack/Models/Source/Forest_pack_models_set.FBX
+  artifactKey: Guid(11513268302b562498f3c140346b22c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Handpainted_Forest_pack/Models/Source/Forest_pack_models_set.FBX using Guid(11513268302b562498f3c140346b22c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7c0f6601c64ab80d5cfa31957868f44') in 0.337242 seconds 
+  Import took 0.341257 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008084 seconds.
+  path: Assets/_My Assets/Materials/Snow.mat
+  artifactKey: Guid(38eaf24538caa184d99c7514dabd9db1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_My Assets/Materials/Snow.mat using Guid(38eaf24538caa184d99c7514dabd9db1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8661911eb852455f655019cda38f02e1') in 0.015411 seconds 
+  Import took 0.019301 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007645 seconds.
+  path: Assets/Handpainted_Forest_pack/Models/Source/Grass_v2_1.mat
+  artifactKey: Guid(59871923837676c4faba6f9673ff6d79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Handpainted_Forest_pack/Models/Source/Grass_v2_1.mat using Guid(59871923837676c4faba6f9673ff6d79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba9ac43bcc54b615da2a39e1113e5ddf') in 0.016062 seconds 
+  Import took 0.019704 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008325 seconds.
+  path: Assets/_My Assets/Models/House/Materials/WoodenLogs.mat
+  artifactKey: Guid(d89b59a6281829f4ba864b257cca2683) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_My Assets/Models/House/Materials/WoodenLogs.mat using Guid(d89b59a6281829f4ba864b257cca2683) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7eb354c37a36269e9ec35ff2be1f67da') in 0.014059 seconds 
+  Import took 0.017848 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006340 seconds.
+  path: Assets/_My Assets/Models/House
+  artifactKey: Guid(f8b261f400af5b143a51b02f4278ac4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_My Assets/Models/House using Guid(f8b261f400af5b143a51b02f4278ac4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93bb1759a62645eec25d960a5752256c') in 0.003773 seconds 
+  Import took 0.007458 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004433 seconds.
+  path: Assets/ANGRY MESH/Snowman/Sources
+  artifactKey: Guid(481bcb1eaaa59474080c70e2af878272) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANGRY MESH/Snowman/Sources using Guid(481bcb1eaaa59474080c70e2af878272) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5816c512318c81bb4a794ecfbd1904d2') in 0.003708 seconds 
+  Import took 0.006823 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004316 seconds.
+  path: Assets/_My Assets/Models/SnowMan
+  artifactKey: Guid(b20b688685328b847a0d12e721e1b406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_My Assets/Models/SnowMan using Guid(b20b688685328b847a0d12e721e1b406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a3480569eb410a34566240a329a610b') in 0.003463 seconds 
+  Import took 0.006524 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006128 seconds.
+  path: Assets/ANGRY MESH/Snowman/Sources/Materials/Snowman_03.mat
+  artifactKey: Guid(4cac6c2aa1a2e7e42adc553f43c3ea63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANGRY MESH/Snowman/Sources/Materials/Snowman_03.mat using Guid(4cac6c2aa1a2e7e42adc553f43c3ea63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b515d5e221ae2df536d3bb91a2787f4') in 0.031014 seconds 
+  Import took 0.034674 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008744 seconds.
+  path: Assets/Handpainted_Forest_pack/Models/Source/Grass_v1_1.png
+  artifactKey: Guid(d41ffe9d7aae5874c81a5edf96a4781e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Handpainted_Forest_pack/Models/Source/Grass_v1_1.png using Guid(d41ffe9d7aae5874c81a5edf96a4781e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55c5e08dbc11b921f9c303c3068c6dab') in 0.011861 seconds 
+  Import took 0.015929 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.009099 seconds.
+  path: Assets/_My Assets/Textures/rooftilesceramic-3.jpg
+  artifactKey: Guid(ce51b673835af3741b5f560421dfeac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_My Assets/Textures/rooftilesceramic-3.jpg using Guid(ce51b673835af3741b5f560421dfeac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80dce68e5b8d6d5c9711d584a455fc8e') in 0.013172 seconds 
+  Import took 0.016796 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.009011 seconds.
+  path: Assets/_My Assets/Textures/snow-25.jpg
+  artifactKey: Guid(913c9b9dc788f3440b27468313c36029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_My Assets/Textures/snow-25.jpg using Guid(913c9b9dc788f3440b27468313c36029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb54e1d827dbf15d8f21f13c9a4787ed') in 0.011050 seconds 
+  Import took 0.014758 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.020504 seconds.
+  path: Assets/ANGRY MESH/Snowman/Sources/Textures/Snowman_Normal.tga
+  artifactKey: Guid(055d1b601cc34484999b606bf65b1da3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANGRY MESH/Snowman/Sources/Textures/Snowman_Normal.tga using Guid(055d1b601cc34484999b606bf65b1da3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64a73a5d89258a85f47afbf67f8e781e') in 0.034048 seconds 
+  Import took 0.038126 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007636 seconds.
+  path: Assets/Handpainted_Forest_pack/Models/Source/Grass_v2_1.png
+  artifactKey: Guid(c21ba585cdeba2c4599d076364526015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Handpainted_Forest_pack/Models/Source/Grass_v2_1.png using Guid(c21ba585cdeba2c4599d076364526015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19d4f15b5683d52d3435e3021c270dbb') in 0.013328 seconds 
+  Import took 0.016946 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008086 seconds.
+  path: Assets/Handpainted_Forest_pack/Models/Source/Floor_Grass_v1_1.mat
+  artifactKey: Guid(ff877304ec6ab8d4ba4c9b6a346c5775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Handpainted_Forest_pack/Models/Source/Floor_Grass_v1_1.mat using Guid(ff877304ec6ab8d4ba4c9b6a346c5775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0170d79c6c129496d1e8c23402fa623') in 0.016280 seconds 
+  Import took 0.019950 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010024 seconds.
+  path: Assets/_My Assets/Models/SnowMan/SnowMan.prefab
+  artifactKey: Guid(5d30207e6dc20c247acc4e37e5705087) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_My Assets/Models/SnowMan/SnowMan.prefab using Guid(5d30207e6dc20c247acc4e37e5705087) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19e9abf8987518ebe7a15024f691b631') in 0.039042 seconds 
+  Import took 0.042994 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004463 seconds.
+  path: Assets/_My Assets
+  artifactKey: Guid(586179ac3d08da34ca0c7bc05c91084b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_My Assets using Guid(586179ac3d08da34ca0c7bc05c91084b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ff58475c87e48e2795280076765ed58') in 0.003612 seconds 
+  Import took 0.006731 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.023744 seconds.
+  path: Assets/ANGRY MESH/Snowman/Sources/Textures/Ground_Snow_Albedo.tga
+  artifactKey: Guid(b620524d595fc1a46b86ba918c279994) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANGRY MESH/Snowman/Sources/Textures/Ground_Snow_Albedo.tga using Guid(b620524d595fc1a46b86ba918c279994) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '927bbe71b2f23a31f5c18d11e3fa6adc') in 0.015520 seconds 
+  Import took 0.019422 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007382 seconds.
+  path: Assets/_My Assets/Models/House/Materials/wood-1-mini.mat
+  artifactKey: Guid(337ee466852378841a579eec6352d357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_My Assets/Models/House/Materials/wood-1-mini.mat using Guid(337ee466852378841a579eec6352d357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f642a7875121d7ac2c73ed6752c472ad') in 0.014559 seconds 
+  Import took 0.018170 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007994 seconds.
+  path: Assets/ANGRY MESH/Snowman/Prefabs/Snow_Particles.prefab
+  artifactKey: Guid(4ca04dc9501451e498e3f029e625ccaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANGRY MESH/Snowman/Prefabs/Snow_Particles.prefab using Guid(4ca04dc9501451e498e3f029e625ccaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c73b823ba108a3d261b3817bccede668') in 0.029620 seconds 
+  Import took 0.033357 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.029129 seconds.
+  path: Assets/ANGRY MESH/Snowman/Sources/Textures/Ground_Snow_NM.tga
+  artifactKey: Guid(9065286a47514d84ea14865372fef43f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANGRY MESH/Snowman/Sources/Textures/Ground_Snow_NM.tga using Guid(9065286a47514d84ea14865372fef43f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f26e61cbb7b676dc2a45fe9fdb653fd') in 0.017024 seconds 
+  Import took 0.020897 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008160 seconds.
+  path: Assets/_My Assets/Models/SnowMan/Materials/Carrot.mat
+  artifactKey: Guid(ed545d83e4060b044a64baf3c36b806a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_My Assets/Models/SnowMan/Materials/Carrot.mat using Guid(ed545d83e4060b044a64baf3c36b806a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf2c1c21278fb8123940df7d0d386fd2') in 0.013961 seconds 
+  Import took 0.017852 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006320 seconds.
+  path: Assets/ANGRY MESH/Snowman/Sources/Meshes
+  artifactKey: Guid(162bd42896aef7c418803a0ff667ed67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANGRY MESH/Snowman/Sources/Meshes using Guid(162bd42896aef7c418803a0ff667ed67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01c699c83372b25f1d4232162a0af5e9') in 0.003616 seconds 
+  Import took 0.006838 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006045 seconds.
+  path: Assets/ANGRY MESH/Snowman/Sources/Materials/Snow_Particles.mat
+  artifactKey: Guid(5850c4fb0bfafcb4b9572bbd9189bbdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANGRY MESH/Snowman/Sources/Materials/Snow_Particles.mat using Guid(5850c4fb0bfafcb4b9572bbd9189bbdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f693a069f89a76f5e7766cbc0296f1a2') in 0.015249 seconds 
+  Import took 0.018943 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007867 seconds.
+  path: Assets/ANGRY MESH/Snowman/Sources/Materials/Skybox.mat
+  artifactKey: Guid(0045384acbb78fa4caea18b87f4aaa94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANGRY MESH/Snowman/Sources/Materials/Skybox.mat using Guid(0045384acbb78fa4caea18b87f4aaa94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1186038bec98cf90ffa36990b4e9254') in 0.015188 seconds 
+  Import took 0.019046 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010155 seconds.
+  path: Assets/_My Assets/Textures/snow-23.jpg
+  artifactKey: Guid(845e62efc5b70d740b8874229a497d51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_My Assets/Textures/snow-23.jpg using Guid(845e62efc5b70d740b8874229a497d51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5280a8018e9b03f01b7f34a6487f1a80') in 0.010953 seconds 
+  Import took 0.014717 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006384 seconds.
+  path: Assets/ANGRY MESH/Snowman/Prefabs
+  artifactKey: Guid(b0c2d5c87589b92459b1694c235486aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANGRY MESH/Snowman/Prefabs using Guid(b0c2d5c87589b92459b1694c235486aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f241cdd3827c58e1aaac9aa3eff3a9fa') in 0.003543 seconds 
+  Import took 0.006787 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006315 seconds.
+  path: Assets/ANGRY MESH/Snowman/Prefabs/Snowman_02.prefab
+  artifactKey: Guid(7c1543f51c5b8cc488fc53ab3cbffbb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANGRY MESH/Snowman/Prefabs/Snowman_02.prefab using Guid(7c1543f51c5b8cc488fc53ab3cbffbb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31cf14244553de0b1635a5d1eb6dcd01') in 0.029676 seconds 
+  Import took 0.033535 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008070 seconds.
+  path: Assets/_My Assets/Models/House/Materials/Wooden Logs.mat
+  artifactKey: Guid(41115318aa1cda64d8f1ac40238f0ec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_My Assets/Models/House/Materials/Wooden Logs.mat using Guid(41115318aa1cda64d8f1ac40238f0ec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af0bed09b6ba5f3128fc0e60c23522ee') in 0.015674 seconds 
+  Import took 0.019251 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007933 seconds.
+  path: Assets/Handpainted_Forest_pack/Models/Floor_Grass_v1_2.prefab
+  artifactKey: Guid(a2fbc4036fe0e9f40899ea784ee93073) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Handpainted_Forest_pack/Models/Floor_Grass_v1_2.prefab using Guid(a2fbc4036fe0e9f40899ea784ee93073) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7fc005c99feb1baf943f5b39bb1d0d6') in 0.016306 seconds 
+  Import took 0.020196 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006340 seconds.
+  path: Assets/ANGRY MESH/Snowman/Sources/Textures
+  artifactKey: Guid(884a8eba889a7554b951ba4e3b9cf27d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANGRY MESH/Snowman/Sources/Textures using Guid(884a8eba889a7554b951ba4e3b9cf27d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c5d8f6bf86bb9a79c46d0fab2ab3c8d') in 0.003538 seconds 
+  Import took 0.006872 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004511 seconds.
+  path: Assets/Handpainted_Forest_pack/Models
+  artifactKey: Guid(e6ef26e78701f704582bb1f8938086d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Handpainted_Forest_pack/Models using Guid(e6ef26e78701f704582bb1f8938086d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a21423b1fbe9d8877601ad513fbeb8c') in 0.003632 seconds 
+  Import took 0.006780 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006283 seconds.
+  path: Assets/ANGRY MESH/Snowman/Prefabs/Snowman_01.prefab
+  artifactKey: Guid(af67ec531803f32419e99a1b4efdb52d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANGRY MESH/Snowman/Prefabs/Snowman_01.prefab using Guid(af67ec531803f32419e99a1b4efdb52d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '139db05af8613f736f3ca7e87edbcf00') in 0.025403 seconds 
+  Import took 0.029345 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008059 seconds.
+  path: Assets/Handpainted_Forest_pack/Models/Pine_v1_2.prefab
+  artifactKey: Guid(07232b84fecc54e45b2e071b6885bb96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Handpainted_Forest_pack/Models/Pine_v1_2.prefab using Guid(07232b84fecc54e45b2e071b6885bb96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84620f8d29e58c7af88600d813d00465') in 0.018692 seconds 
+  Import took 0.022985 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006602 seconds.
+  path: Assets/ANGRY MESH/Snowman/Sources/Materials
+  artifactKey: Guid(e711831e945403842b0cc72134f4a5be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANGRY MESH/Snowman/Sources/Materials using Guid(e711831e945403842b0cc72134f4a5be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d44bfd53690f66ccfc6313700f32b01') in 0.003529 seconds 
+  Import took 0.006914 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004740 seconds.
+  path: Assets/_My Assets/Textures
+  artifactKey: Guid(e7d49c4d8f0aa4a4982e0e72d91c7c41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_My Assets/Textures using Guid(e7d49c4d8f0aa4a4982e0e72d91c7c41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab66805814a8fa32905e06a29e0ee91c') in 0.003502 seconds 
+  Import took 0.006622 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007929 seconds.
+  path: Assets/Handpainted_Forest_pack/Models/Source/Floor_Grass_v1_2.tga
+  artifactKey: Guid(7be934018fb10d640ae99ae9bf7cbe7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Handpainted_Forest_pack/Models/Source/Floor_Grass_v1_2.tga using Guid(7be934018fb10d640ae99ae9bf7cbe7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f63b14061ea1a5e87f084e1cd842fcf3') in 0.013014 seconds 
+  Import took 0.016767 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008015 seconds.
+  path: Assets/Handpainted_Forest_pack/Models/Grass_v1_2.prefab
+  artifactKey: Guid(e7943b8da41d75045a6bd919f15691ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Handpainted_Forest_pack/Models/Grass_v1_2.prefab using Guid(e7943b8da41d75045a6bd919f15691ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46bf51d27b571774fa85b8f4bcba0747') in 0.014903 seconds 
+  Import took 0.018842 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006908 seconds.
+  path: Assets/Handpainted_Forest_pack/Models/Source/Grass_v1_2.png
+  artifactKey: Guid(8d4abee17d6b77d47b140f7df6ea81af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Handpainted_Forest_pack/Models/Source/Grass_v1_2.png using Guid(8d4abee17d6b77d47b140f7df6ea81af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78e07d07a70a7edb891a0546c14f25d0') in 0.014929 seconds 
+  Import took 0.018522 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007307 seconds.
+  path: Assets/_My Assets/Models/House/Materials/rooftilesceramic-3.mat
+  artifactKey: Guid(ff72be22f8a7a2a48928198ec1d94df4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_My Assets/Models/House/Materials/rooftilesceramic-3.mat using Guid(ff72be22f8a7a2a48928198ec1d94df4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a917b33c88b47eb5f210fe65968561e6') in 0.015452 seconds 
+  Import took 0.019106 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008185 seconds.
+  path: Assets/Handpainted_Forest_pack/Models/Source/Grass_v1_3.mat
+  artifactKey: Guid(628ed950aa8383043806c5458764725f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Handpainted_Forest_pack/Models/Source/Grass_v1_3.mat using Guid(628ed950aa8383043806c5458764725f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61463ab38f7d16cfef5a5e828e621220') in 0.013566 seconds 
+  Import took 0.017650 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007894 seconds.
+  path: Assets/Handpainted_Forest_pack/Models/Source/Grass_v1_1.mat
+  artifactKey: Guid(1523a0f878da8e44aa9166a0a9553429) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Handpainted_Forest_pack/Models/Source/Grass_v1_1.mat using Guid(1523a0f878da8e44aa9166a0a9553429) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8e10427b11151d5e84745a358235c19') in 0.013452 seconds 
+  Import took 0.016934 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007551 seconds.
+  path: Assets/2D Art/Cover-Image.png
+  artifactKey: Guid(cb561e4ce72f6374f808e0fb77307268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Art/Cover-Image.png using Guid(cb561e4ce72f6374f808e0fb77307268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01b21704326daaefe02cdb16f4273261') in 0.015731 seconds 
+  Import took 0.019346 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008192 seconds.
+  path: Assets/_My Assets/Textures/wood-1-mini.jpg
+  artifactKey: Guid(8acd44bad2fcb0b499501963f433e7d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_My Assets/Textures/wood-1-mini.jpg using Guid(8acd44bad2fcb0b499501963f433e7d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aeb01d176fd9b35bfb7dac140d480a61') in 0.011952 seconds 
+  Import took 0.015501 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.013120 seconds.
+  path: Assets/Scenes/Task_1.unity
+  artifactKey: Guid(6f4a2b30d6b4abc4ea830bf785ff3ff9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Task_1.unity using Guid(6f4a2b30d6b4abc4ea830bf785ff3ff9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdaffabab7ebe6a77defd9a6464e9a02') in 0.004715 seconds 
+  Import took 0.008474 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006713 seconds.
+  path: Assets/Handpainted_Forest_pack/Models/Grass_v2_1.prefab
+  artifactKey: Guid(bca1934b3991fe648b8181db36dfcfcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Handpainted_Forest_pack/Models/Grass_v2_1.prefab using Guid(bca1934b3991fe648b8181db36dfcfcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7e29e1c653b448cc072ac5099b4517e') in 0.014694 seconds 
+  Import took 0.018244 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008002 seconds.
+  path: Assets/_My Assets/Models/SnowMan/Materials/Black.mat
+  artifactKey: Guid(411f3b2c9603c7e42b51e0209e52d5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_My Assets/Models/SnowMan/Materials/Black.mat using Guid(411f3b2c9603c7e42b51e0209e52d5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37fb140837ef0aa2775cf6b856a321aa') in 0.013046 seconds 
+  Import took 0.016577 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007823 seconds.
+  path: Assets/_My Assets/Models/SnowMan/Materials/Bucket.mat
+  artifactKey: Guid(5e1a4997428633746ab1e2f577bc9441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_My Assets/Models/SnowMan/Materials/Bucket.mat using Guid(5e1a4997428633746ab1e2f577bc9441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f364d64ae977118313cfb2373c0eb425') in 0.013196 seconds 
+  Import took 0.016982 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006044 seconds.
+  path: Assets/Handpainted_Forest_pack
+  artifactKey: Guid(e05d2f9cf87d6764680f39788b7623aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Handpainted_Forest_pack using Guid(e05d2f9cf87d6764680f39788b7623aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'beac167f79294254114de2166595fb7d') in 0.003621 seconds 
+  Import took 0.007016 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005879 seconds.
+  path: Assets/Handpainted_Forest_pack/Models/Fir_v1_2.prefab
+  artifactKey: Guid(97fa5d2e177822c4084dda50fa0986c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Handpainted_Forest_pack/Models/Fir_v1_2.prefab using Guid(97fa5d2e177822c4084dda50fa0986c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '146cd9873b98b8d3e8bb09be87bf8242') in 0.015699 seconds 
+  Import took 0.019357 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.025247 seconds.
+  path: Assets/ANGRY MESH/Snowman/Sources/Textures/Snowman_Albedo_02 (A Smoothness).tga
+  artifactKey: Guid(2919a2e46981b72499acb6a0502aecec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANGRY MESH/Snowman/Sources/Textures/Snowman_Albedo_02 (A Smoothness).tga using Guid(2919a2e46981b72499acb6a0502aecec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce792c1f355d4780bb203b9af27c79d6') in 0.015891 seconds 
+  Import took 0.019780 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007647 seconds.
+  path: Assets/Scenes/Task_2.unity
+  artifactKey: Guid(9d0b5a7684fa79a4fa866bb2aae9c92b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Task_2.unity using Guid(9d0b5a7684fa79a4fa866bb2aae9c92b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d338c4df6d8d4f7168acbfdc58f88ac') in 0.004502 seconds 
+  Import took 0.007894 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005694 seconds.
   path: Assets/_My Assets/Models/House/Materials/wood.mat
   artifactKey: Guid(fed14e7913b3b724eb6d175bc8f83207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_My Assets/Models/House/Materials/wood.mat using Guid(fed14e7913b3b724eb6d175bc8f83207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6ca01f802ab44091ffb8cade82ad434') in 0.009672 seconds 
-  Import took 0.012170 seconds .
+Start importing Assets/_My Assets/Models/House/Materials/wood.mat using Guid(fed14e7913b3b724eb6d175bc8f83207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17b4ba0bfa9f01793421b60faf5473d6') in 0.014771 seconds 
+  Import took 0.018283 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.004763 seconds.
+  Time since last request: 0.008182 seconds.
   path: Assets/_My Assets/Textures/WoodenLogsNormalMap.jpg
   artifactKey: Guid(80933a78e82487848997110cb07ce1da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_My Assets/Textures/WoodenLogsNormalMap.jpg using Guid(80933a78e82487848997110cb07ce1da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89807048595ad617c348be0530d8a552') in 0.007683 seconds 
-  Import took 0.010225 seconds .
+Start importing Assets/_My Assets/Textures/WoodenLogsNormalMap.jpg using Guid(80933a78e82487848997110cb07ce1da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ef94a5b6eadea044d8764221ff1da5a') in 0.011043 seconds 
+  Import took 0.014690 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.008730 seconds.
+  Time since last request: 0.008484 seconds.
+  path: Assets/2D Art/ui_spritesheet.png
+  artifactKey: Guid(a476bcac7f625c346b3ada58abac3280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Art/ui_spritesheet.png using Guid(a476bcac7f625c346b3ada58abac3280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dd35cdbd68fe7b7f78602199e7018fb') in 0.258972 seconds 
+  Import took 0.263129 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008274 seconds.
   path: Assets/Handpainted_Forest_pack/Models/Grass_v1_1.prefab
   artifactKey: Guid(28f60661728ddb148a424ba31b70ccc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Handpainted_Forest_pack/Models/Grass_v1_1.prefab using Guid(28f60661728ddb148a424ba31b70ccc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56409ec13cfa21f38066d87e80a866fd') in 0.008773 seconds 
-  Import took 0.011340 seconds .
+Start importing Assets/Handpainted_Forest_pack/Models/Grass_v1_1.prefab using Guid(28f60661728ddb148a424ba31b70ccc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cdccb0611f44901f80a63db9c9742b1') in 0.015097 seconds 
+  Import took 0.018812 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.004717 seconds.
+  Time since last request: 0.009391 seconds.
   path: Assets/ANGRY MESH/Snowman/Sources/Meshes/Snowman.FBX
   artifactKey: Guid(9149b010c2de52f49ad44dee5494fd00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ANGRY MESH/Snowman/Sources/Meshes/Snowman.FBX using Guid(9149b010c2de52f49ad44dee5494fd00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7815de7f7e39c7f8793351b07fb9f039') in 0.028471 seconds 
-  Import took 0.030992 seconds .
+Start importing Assets/ANGRY MESH/Snowman/Sources/Meshes/Snowman.FBX using Guid(9149b010c2de52f49ad44dee5494fd00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3b343459ee61e9c6d1618f349918fcf') in 0.048190 seconds 
+  Import took 0.051890 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.004654 seconds.
+  Time since last request: 0.007166 seconds.
   path: Assets/Handpainted_Forest_pack/Models/Source/Pine_v1.mat
   artifactKey: Guid(d5f4b3829380d6c48b3b0bad301f2497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Handpainted_Forest_pack/Models/Source/Pine_v1.mat using Guid(d5f4b3829380d6c48b3b0bad301f2497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b088bfe88a9b567199663f9fe78d01b') in 0.010986 seconds 
-  Import took 0.013747 seconds .
+Start importing Assets/Handpainted_Forest_pack/Models/Source/Pine_v1.mat using Guid(d5f4b3829380d6c48b3b0bad301f2497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8bfd57c5d42a8d8b70f810067261406') in 0.015573 seconds 
+  Import took 0.019636 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.005594 seconds.
+  Time since last request: 0.009382 seconds.
   path: Assets/_My Assets/Models/SnowMan/SnowMan (1).prefab
   artifactKey: Guid(96aef7f2506802142b3b4a48d9e27e50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_My Assets/Models/SnowMan/SnowMan (1).prefab using Guid(96aef7f2506802142b3b4a48d9e27e50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69aa22e49f5834494e8437e08bf5536e') in 0.034594 seconds 
-  Import took 0.037423 seconds .
+Start importing Assets/_My Assets/Models/SnowMan/SnowMan (1).prefab using Guid(96aef7f2506802142b3b4a48d9e27e50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fa7d90f080371d4d46679c9461777f3') in 0.030577 seconds 
+  Import took 0.034694 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.004903 seconds.
+  Time since last request: 0.009676 seconds.
   path: Assets/_My Assets/Models/House/House.prefab
   artifactKey: Guid(9bc708d8e25896841bba59a1d025819e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_My Assets/Models/House/House.prefab using Guid(9bc708d8e25896841bba59a1d025819e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1558275992bbffbbffb7bdf55bc5c057') in 0.037935 seconds 
-  Import took 0.040741 seconds .
+Start importing Assets/_My Assets/Models/House/House.prefab using Guid(9bc708d8e25896841bba59a1d025819e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c46ff18b522f9cca28d0623ee6759583') in 0.041271 seconds 
+  Import took 0.045309 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.004691 seconds.
+  Time since last request: 0.006042 seconds.
   path: Assets/Handpainted_Forest_pack/Models/Source/Grass_v1_2.mat
   artifactKey: Guid(541867319ef080d44b29c65a3c9d5b19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Handpainted_Forest_pack/Models/Source/Grass_v1_2.mat using Guid(541867319ef080d44b29c65a3c9d5b19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcfd0a6df72a111b9af2c2dabfb3b15c') in 0.008361 seconds 
-  Import took 0.010923 seconds .
+Start importing Assets/Handpainted_Forest_pack/Models/Source/Grass_v1_2.mat using Guid(541867319ef080d44b29c65a3c9d5b19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9513bc7388f6f341f0d93e26c00eaac') in 0.013704 seconds 
+  Import took 0.017452 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.004607 seconds.
+  Time since last request: 0.007541 seconds.
   path: Assets/Handpainted_Forest_pack/Models/Fir_v1_1.prefab
   artifactKey: Guid(a47d7ad739a48614babdcba6106ead5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Handpainted_Forest_pack/Models/Fir_v1_1.prefab using Guid(a47d7ad739a48614babdcba6106ead5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f43937c1e0011adee4734e703022b5b0') in 0.009413 seconds 
-  Import took 0.011991 seconds .
+Start importing Assets/Handpainted_Forest_pack/Models/Fir_v1_1.prefab using Guid(a47d7ad739a48614babdcba6106ead5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b0f186d660c40b63bc307c6a9eca1e6') in 0.015152 seconds 
+  Import took 0.018769 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.004646 seconds.
+  Time since last request: 0.010467 seconds.
   path: Assets/Handpainted_Forest_pack/Models/Floor_Grass_v1_1.prefab
   artifactKey: Guid(4e43cdca195a1664d966791f28202d31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Handpainted_Forest_pack/Models/Floor_Grass_v1_1.prefab using Guid(4e43cdca195a1664d966791f28202d31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9a5572a11f8e3c79f5d21ac92b93dcc') in 0.010180 seconds 
-  Import took 0.012777 seconds .
+Start importing Assets/Handpainted_Forest_pack/Models/Floor_Grass_v1_1.prefab using Guid(4e43cdca195a1664d966791f28202d31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '972c9faad1a4a4e9a05b054e714cb2da') in 0.015166 seconds 
+  Import took 0.019118 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.004569 seconds.
+  Time since last request: 0.008636 seconds.
   path: Assets/_My Assets/Models/SnowMan/Materials/Red.mat
   artifactKey: Guid(2bf806ea83c4cef42950fd1b96957e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_My Assets/Models/SnowMan/Materials/Red.mat using Guid(2bf806ea83c4cef42950fd1b96957e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c88012fc16b28c3dc7869d175ba4c965') in 0.008934 seconds 
-  Import took 0.011742 seconds .
+Start importing Assets/_My Assets/Models/SnowMan/Materials/Red.mat using Guid(2bf806ea83c4cef42950fd1b96957e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aba32e4d184f9d69eff16dc85bd70d49') in 0.013374 seconds 
+  Import took 0.016962 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.004633 seconds.
+  Time since last request: 0.008197 seconds.
   path: Assets/ANGRY MESH/Snowman/Sources/Textures/Helper_Color_01.tga
   artifactKey: Guid(40ffcc3226f38274b9bab409e13a0351) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ANGRY MESH/Snowman/Sources/Textures/Helper_Color_01.tga using Guid(40ffcc3226f38274b9bab409e13a0351) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef50c1db8f2bf102dad2968c859363bb') in 0.007562 seconds 
-  Import took 0.010066 seconds .
+Start importing Assets/ANGRY MESH/Snowman/Sources/Textures/Helper_Color_01.tga using Guid(40ffcc3226f38274b9bab409e13a0351) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa0a308c9a5a0fc4cb5ef84058c25e82') in 0.011230 seconds 
+  Import took 0.014687 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.010953 seconds.
+  Time since last request: 0.024535 seconds.
   path: Assets/ANGRY MESH/Snowman/Sources/Textures/Snowman_Albedo_03 (A Smoothness).tga
   artifactKey: Guid(147972da3bfefeb4aa797d6a7b199e62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ANGRY MESH/Snowman/Sources/Textures/Snowman_Albedo_03 (A Smoothness).tga using Guid(147972da3bfefeb4aa797d6a7b199e62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '099d97048236bfa68000f41fb26e5a4c') in 0.010306 seconds 
-  Import took 0.012848 seconds .
+Start importing Assets/ANGRY MESH/Snowman/Sources/Textures/Snowman_Albedo_03 (A Smoothness).tga using Guid(147972da3bfefeb4aa797d6a7b199e62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60cdd2d466572d3db4fd47c1d06bdfed') in 0.015558 seconds 
+  Import took 0.019383 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.004622 seconds.
+  Time since last request: 0.008006 seconds.
   path: Assets/Handpainted_Forest_pack/Models/Source/Fir_v1.png
   artifactKey: Guid(9c13a6618fe3ab949bb617e67f862135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Handpainted_Forest_pack/Models/Source/Fir_v1.png using Guid(9c13a6618fe3ab949bb617e67f862135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ba830c1e68033512d0b4e89198dbf2b') in 0.007838 seconds 
-  Import took 0.010362 seconds .
+Start importing Assets/Handpainted_Forest_pack/Models/Source/Fir_v1.png using Guid(9c13a6618fe3ab949bb617e67f862135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1eaee86d2f2aa24880cceb682826ab9d') in 0.012046 seconds 
+  Import took 0.015627 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.003116 seconds.
+  Time since last request: 0.006550 seconds.
   path: Assets/2D Art
   artifactKey: Guid(88ba22d5c27a49a44991ec61c725d97c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Art using Guid(88ba22d5c27a49a44991ec61c725d97c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c5d7be8e455fe1cfeda604d564181e7') in 0.003886 seconds 
-  Import took 0.006328 seconds .
+Start importing Assets/2D Art using Guid(88ba22d5c27a49a44991ec61c725d97c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '291b382d1385bae51f4518e3b6789ecf') in 0.003548 seconds 
+  Import took 0.006764 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.004195 seconds.
+  Time since last request: 0.005649 seconds.
   path: Assets/Handpainted_Forest_pack/Models/Source/Fir_v1.mat
   artifactKey: Guid(bf582717bc9abf7479ddfdc7552793fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Handpainted_Forest_pack/Models/Source/Fir_v1.mat using Guid(bf582717bc9abf7479ddfdc7552793fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83106f4706316e351dbcfb036f738eb1') in 0.009121 seconds 
-  Import took 0.012085 seconds .
+Start importing Assets/Handpainted_Forest_pack/Models/Source/Fir_v1.mat using Guid(bf582717bc9abf7479ddfdc7552793fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4873df879ef2c750a5cfffaff3f7d94a') in 0.014475 seconds 
+  Import took 0.017865 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.003131 seconds.
+  Time since last request: 0.006190 seconds.
   path: Assets/_My Assets/Models
   artifactKey: Guid(e7f4b323928cc7e4d9e47d4e21a5edf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_My Assets/Models using Guid(e7f4b323928cc7e4d9e47d4e21a5edf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22586bd6aee413540bd07eb4a7c4c59e') in 0.001401 seconds 
-  Import took 0.003740 seconds .
+Start importing Assets/_My Assets/Models using Guid(e7f4b323928cc7e4d9e47d4e21a5edf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47f1ab71ad4012a6ef4c01038bc9c50e') in 0.003777 seconds 
+  Import took 0.007058 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.004147 seconds.
+  Time since last request: 0.005970 seconds.
   path: Assets/_My Assets/Materials/snow-23.mat
   artifactKey: Guid(da5a8cb232b536a45be37b78f1a2db8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_My Assets/Materials/snow-23.mat using Guid(da5a8cb232b536a45be37b78f1a2db8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c47dbd35c4c168c4aaa80f5ce752710') in 0.009048 seconds 
-  Import took 0.011508 seconds .
+Start importing Assets/_My Assets/Materials/snow-23.mat using Guid(da5a8cb232b536a45be37b78f1a2db8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f77d234372427fabcb92c8543520330') in 0.014395 seconds 
+  Import took 0.017742 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.004701 seconds.
+  Time since last request: 0.007842 seconds.
   path: Assets/_My Assets/Textures/WoodenLogs.jpg
   artifactKey: Guid(ee8e8fdb2ae172c45ba72fa1f15c43d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_My Assets/Textures/WoodenLogs.jpg using Guid(ee8e8fdb2ae172c45ba72fa1f15c43d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '035f499895572f6766975f5b136988fe') in 0.006752 seconds 
-  Import took 0.009241 seconds .
+Start importing Assets/_My Assets/Textures/WoodenLogs.jpg using Guid(ee8e8fdb2ae172c45ba72fa1f15c43d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02e1cf8c4a8d103a8e204f5c61a90d6f') in 0.010874 seconds 
+  Import took 0.014315 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.002999 seconds.
+  Time since last request: 0.006495 seconds.
   path: Assets/ANGRY MESH
   artifactKey: Guid(85d2951913e83d947871f0a77bb87abc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ANGRY MESH using Guid(85d2951913e83d947871f0a77bb87abc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65fc89d49149c212877a3938867ae6cf') in 0.004078 seconds 
-  Import took 0.006505 seconds .
+Start importing Assets/ANGRY MESH using Guid(85d2951913e83d947871f0a77bb87abc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e341cdcfdb230f9ca553ee09aa16a85') in 0.003641 seconds 
+  Import took 0.006955 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.004233 seconds.
+  Time since last request: 0.006559 seconds.
   path: Assets/Handpainted_Forest_pack/Models/Pine_v1_1.prefab
   artifactKey: Guid(13f47203b7fe8ff479a289d12f2f47ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Handpainted_Forest_pack/Models/Pine_v1_1.prefab using Guid(13f47203b7fe8ff479a289d12f2f47ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1abc27b2122e8d886ebba3755e8f8d1') in 0.010548 seconds 
-  Import took 0.013130 seconds .
+Start importing Assets/Handpainted_Forest_pack/Models/Pine_v1_1.prefab using Guid(13f47203b7fe8ff479a289d12f2f47ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '231a448356551abe7103e4122e819809') in 0.015768 seconds 
+  Import took 0.019851 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.004687 seconds.
+  Time since last request: 0.007986 seconds.
   path: Assets/_My Assets/Models/House/Materials/Brown.mat
   artifactKey: Guid(21e5a8472b4d62a498ce8c1ae3217394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_My Assets/Models/House/Materials/Brown.mat using Guid(21e5a8472b4d62a498ce8c1ae3217394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d8ccbfe9a90b6fd26fce7341fce5909') in 0.008952 seconds 
-  Import took 0.011478 seconds .
+Start importing Assets/_My Assets/Models/House/Materials/Brown.mat using Guid(21e5a8472b4d62a498ce8c1ae3217394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22ec8589ff080e00f4de82342097a7a5') in 0.013671 seconds 
+  Import took 0.017287 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.004762 seconds.
+  Time since last request: 0.008155 seconds.
   path: Assets/ANGRY MESH/Snowman/Sources/Materials/Snowman_01.mat
   artifactKey: Guid(d685de567cf8c7a459a4166d9b1d3408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ANGRY MESH/Snowman/Sources/Materials/Snowman_01.mat using Guid(d685de567cf8c7a459a4166d9b1d3408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab8887ec4c8355efd35a12cd98fca9ca') in 0.018765 seconds 
-  Import took 0.023022 seconds .
+Start importing Assets/ANGRY MESH/Snowman/Sources/Materials/Snowman_01.mat using Guid(d685de567cf8c7a459a4166d9b1d3408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '534fb343a06f27d0c611db207f380744') in 0.026967 seconds 
+  Import took 0.031054 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.004636 seconds.
+  Time since last request: 0.008685 seconds.
   path: Assets/Handpainted_Forest_pack/Models/Source/Floor_Grass_v1_2.mat
   artifactKey: Guid(72c5e0d26b8636c41b8d2dab8ac89bb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Handpainted_Forest_pack/Models/Source/Floor_Grass_v1_2.mat using Guid(72c5e0d26b8636c41b8d2dab8ac89bb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db6c4ae0a741c5546d0713f9d5f726de') in 0.009257 seconds 
-  Import took 0.012546 seconds .
+Start importing Assets/Handpainted_Forest_pack/Models/Source/Floor_Grass_v1_2.mat using Guid(72c5e0d26b8636c41b8d2dab8ac89bb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eabdcf0d5cfe0cf65f9d6e14dcfde384') in 0.015605 seconds 
+  Import took 0.019385 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.003074 seconds.
+  Time since last request: 0.006935 seconds.
   path: Assets/_My Assets/Models/SnowMan/Materials
   artifactKey: Guid(219ceb9bfccf88a41b461d9b21673254) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_My Assets/Models/SnowMan/Materials using Guid(219ceb9bfccf88a41b461d9b21673254) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2121479d4796ddf195f5f769832889ce') in 0.001731 seconds 
-  Import took 0.004551 seconds .
+Start importing Assets/_My Assets/Models/SnowMan/Materials using Guid(219ceb9bfccf88a41b461d9b21673254) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b21d2c9a45bcabd2e18607b52370233') in 0.003707 seconds 
+  Import took 0.007307 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.008805 seconds.
+  Time since last request: 0.019946 seconds.
   path: Assets/ANGRY MESH/Snowman/Sources/Textures/Snowman_AO.tga
   artifactKey: Guid(57029af9b4035c74e9438bacb13c92da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ANGRY MESH/Snowman/Sources/Textures/Snowman_AO.tga using Guid(57029af9b4035c74e9438bacb13c92da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '657a7f1196eb1aa8e7f9429e2d35c9d5') in 0.010919 seconds 
-  Import took 0.013458 seconds .
+Start importing Assets/ANGRY MESH/Snowman/Sources/Textures/Snowman_AO.tga using Guid(57029af9b4035c74e9438bacb13c92da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '765b0ebc548c5e60465e0a0f82c8c999') in 0.016484 seconds 
+  Import took 0.020695 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.005505 seconds.
+  Time since last request: 0.015223 seconds.
   path: Assets/Handpainted_Forest_pack/Models/Source/Floor_Grass_v1_1.tga
   artifactKey: Guid(3a203929128f91f46be823db0be54d30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Handpainted_Forest_pack/Models/Source/Floor_Grass_v1_1.tga using Guid(3a203929128f91f46be823db0be54d30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca81b504fe934378a6950eac24cc6e87') in 0.007974 seconds 
-  Import took 0.010470 seconds .
+Start importing Assets/Handpainted_Forest_pack/Models/Source/Floor_Grass_v1_1.tga using Guid(3a203929128f91f46be823db0be54d30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91f3753fcc7cbaa774c8eeaaa6ebd713') in 0.209963 seconds 
+  Import took 0.214192 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.004658 seconds.
+  Time since last request: 0.008129 seconds.
   path: Assets/ANGRY MESH/Snowman/Sources/Materials/Snowman_02.mat
   artifactKey: Guid(cda2377c044674946a9f19ff4c3d9aa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ANGRY MESH/Snowman/Sources/Materials/Snowman_02.mat using Guid(cda2377c044674946a9f19ff4c3d9aa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a40eb3a21f1d492237346172000583f') in 0.019030 seconds 
-  Import took 0.021897 seconds .
+Start importing Assets/ANGRY MESH/Snowman/Sources/Materials/Snowman_02.mat using Guid(cda2377c044674946a9f19ff4c3d9aa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f5255ceadd46c1fa14df578c6187d71') in 0.028438 seconds 
+  Import took 0.032648 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.003055 seconds.
+  Time since last request: 0.006563 seconds.
   path: Assets/_My Assets/Materials
   artifactKey: Guid(cbdb4375de87d874b8237fa854c0ff2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_My Assets/Materials using Guid(cbdb4375de87d874b8237fa854c0ff2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdaad7d8c2444b09ca60cbe70cec856b') in 0.001466 seconds 
-  Import took 0.003831 seconds .
+Start importing Assets/_My Assets/Materials using Guid(cbdb4375de87d874b8237fa854c0ff2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79b34881d52ab74e0278f8b376e10c79') in 0.004035 seconds 
+  Import took 0.007812 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.004121 seconds.
+  Time since last request: 0.006156 seconds.
   path: Assets/_My Assets/Models/House/Materials/Window Frost.mat
   artifactKey: Guid(448282f85d4aabd4fb667327b7e70f30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_My Assets/Models/House/Materials/Window Frost.mat using Guid(448282f85d4aabd4fb667327b7e70f30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35d72d714f2a72b3a7ad12579792905d') in 0.009307 seconds 
-  Import took 0.011812 seconds .
+Start importing Assets/_My Assets/Models/House/Materials/Window Frost.mat using Guid(448282f85d4aabd4fb667327b7e70f30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fc71cedd7912077abd841491f443226') in 0.015351 seconds 
+  Import took 0.019191 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.004803 seconds.
+  Time since last request: 0.018118 seconds.
   path: Assets/_My Assets/Models/House/Materials/Roof.mat
   artifactKey: Guid(d895583fe3e31c241b804c3ba4926bab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_My Assets/Models/House/Materials/Roof.mat using Guid(d895583fe3e31c241b804c3ba4926bab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '687519e76993b0428ac263ffc1da2a01') in 0.155829 seconds 
-  Import took 0.158403 seconds .
+Start importing Assets/_My Assets/Models/House/Materials/Roof.mat using Guid(d895583fe3e31c241b804c3ba4926bab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f880290b7cadf3ede096edf776e968c0') in 0.019446 seconds 
+  Import took 0.023457 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.004824 seconds.
+  Time since last request: 0.007933 seconds.
   path: Assets/ANGRY MESH/Snowman/Sources/Textures/Snow_Particles.tga
   artifactKey: Guid(fa95cafbfb616ce41a97d03594d7d8fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ANGRY MESH/Snowman/Sources/Textures/Snow_Particles.tga using Guid(fa95cafbfb616ce41a97d03594d7d8fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '314ce7b6b059ba7f8529d46fbba5dbbe') in 0.007357 seconds 
-  Import took 0.009861 seconds .
+Start importing Assets/ANGRY MESH/Snowman/Sources/Textures/Snow_Particles.tga using Guid(fa95cafbfb616ce41a97d03594d7d8fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69e58c47e4e18de6f6a39767eeff9d97') in 0.012719 seconds 
+  Import took 0.016651 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
