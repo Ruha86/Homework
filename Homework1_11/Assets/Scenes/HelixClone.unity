@@ -262,15 +262,9 @@ MonoBehaviour:
   - {fileID: 7960775212641771967, guid: bd28229452c4bea4e8f4de51d77487f9, type: 3}
   - {fileID: 4227968093300846809, guid: aaefe3aed7c84434a876ae0803726c7a, type: 3}
   - {fileID: 218043363654802707, guid: 2266b4095b899ca4190cb6d40bc85648, type: 3}
-  - {fileID: 218043363654802707, guid: 8c2bad7ef1459a8439ac7949c015dab6, type: 3}
-  - {fileID: 218043363654802707, guid: f73fc50f187fbcf4c8d1072f0115367c, type: 3}
-  - {fileID: 218043363654802707, guid: 246d1efead1918f4d90bf80c02765081, type: 3}
-  - {fileID: 218043363654802707, guid: 2395fa05ee65ca24f9e33370b238f1af, type: 3}
-  - {fileID: 218043363654802707, guid: dcfac4cb948f6174481e821a89db19dd, type: 3}
-  - {fileID: 218043363654802707, guid: a325d35d1f15d3145be587497e7f90bf, type: 3}
   FirstPlatformPrefab: {fileID: 7818853432185290752, guid: 93686102af8738a40b704103f2160941, type: 3}
-  MinPlatforms: 5
-  MaxPlatforms: 5
+  MinPlatforms: 10
+  MaxPlatforms: 15
   DistanceBetweenPlatforms: 1.5
   FinishPlatform: {fileID: 61038633}
   CylinderRoot: {fileID: 522209848}
@@ -772,7 +766,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.28995064, y: 0, z: 0, w: 0.9570416}
-  m_LocalPosition: {x: 0, y: 6, z: -20}
+  m_LocalPosition: {x: 0, y: 6, z: -23.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -791,8 +785,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1325159983}
-  CameraOffset: {x: 0, y: 6, z: -20}
-  CameraFollowSpeed: 30
+  PlatformToCameraOffset: {x: 0, y: 6, z: -23.3}
+  Speed: 30
 --- !u!1 &1076672055
 GameObject:
   m_ObjectHideFlags: 0

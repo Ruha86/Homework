@@ -1,4 +1,5 @@
 using Assets.Scripts;
+using System;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -9,9 +10,9 @@ public class Player : MonoBehaviour
 
     public Platform CurrentPlatform;
 
-    public void PlayerReachFinish()
+    public void ReachFinish()
     {
-        GameState.FinishLevel();
+        GameState.OnPlayerReachedFinish();
         Rigidbody.velocity = Vector3.zero;
 
     }
@@ -23,7 +24,7 @@ public class Player : MonoBehaviour
 
     internal void Die()
     {
-        GameState.LoseLevel();
+        GameState.OnPlayerDied();
         Rigidbody.velocity = Vector3.zero;
     }
 }

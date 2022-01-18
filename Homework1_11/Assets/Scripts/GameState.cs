@@ -6,31 +6,31 @@ public class GameState : MonoBehaviour
     public Controls Controls;
     public enum State 
     {
-        PLAY,
-        WIN,
-        LOSE,
+        Playing,
+        Won,
+        Loss,
     }
 
     public State CurrentState { get; private set; }
 
-    public void LoseLevel()
+    public void OnPlayerDied()
     {
-        //if (CurrentState != State.PLAY) return;
-        if (CurrentState == State.LOSE)
-        //CurrentState = State.LOSE;
+        if (CurrentState != State.Playing) return;
+
+        CurrentState = State.Loss;
         Controls.enabled = false;
         Debug.Log("Game Over!");
         ReloadLevel();
     }
 
-    public void FinishLevel()
+    public void OnPlayerReachedFinish()
     {
-        //if (CurrentState != State.PLAY) return;
-        if (CurrentState == State.WIN)
-        //CurrentState = State.WIN;
+        if (CurrentState != State.Playing) return;
+
+        CurrentState = State.Won;
         Controls.enabled = false;
         LevelIndex++;
-        Debug.Log("You win!");
+        Debug.Log("You won!");
         ReloadLevel();
     }
     public int LevelIndex 

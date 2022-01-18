@@ -16,9 +16,8 @@ public class LevelGenerator : MonoBehaviour
     private void Awake()
     {
         int levelIndex = GameState.LevelIndex;
-        int difficult = MaxPlatforms + levelIndex;
         Random random = new Random(levelIndex);
-        int platformsCount = RandomRange(random,MinPlatforms, difficult);
+        int platformsCount = RandomRange(random,MinPlatforms, MaxPlatforms + 1);
 
         for (int i = 0; i < platformsCount; i++)
         {
