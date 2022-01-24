@@ -3,26 +3,26 @@ using Random = System.Random;
 
 public class LevelGenerator : MonoBehaviour
 {
-    public GameObject[] PlatformPrefab;
-    public GameObject FirstPlatformPrefab;
-    public int MinPlatforms;
-    public int MaxPlatforms;
-    public float DistanceBetweenPlatforms;
-    public Transform FinishPlatform;
-    public Transform CylinderRoot;
-    public float ExtraCylinderScale = 1f;
-    public GameState GameState;
+    public GameObject[] Platform_Prefab;
+    public GameObject StartPlatform_Prefab; // стартовая платформа (платформа всегда создается первой, под игроком)
+    public int minPlatformsQuantity;    // минимальное количество платформ
+    public int maxPlatformsQuantity;    // максимальное количество платформ
+    public float DistanceBetweenPlatforms;  // расстояние между платформами
+    public Transform FinishPlatform;    // финальная платформа
+    public Transform CylinderRoot;  // цилиндр (ось)
+    public float AdditionalCylinderScale = 1f;  // увеличение размера цилиндра
+    public GameState GameState; // игровое состояние (PLAY, WIN, LOSE)
 
     private void Awake()
     {
         int levelIndex = GameState.LevelIndex;
         Random random = new Random(levelIndex);
-        int platformsCount = RandomRange(random,MinPlatforms, MaxPlatforms + 1);
+        int platformsCount = RandomRange(random,minPlatformsQuantity, maxPlatformsQuantity + 1 * levelIndex);
 
         for (int i = 0; i < platformsCount; i++)
         {
-            int prefabIndex = RandomRange(random, 0, PlatformPrefab.Length);
-            GameObject platformPrefab = i == 0 ? FirstPlatformPrefab : PlatformPrefab[prefabIndex];
+            int prefabIndex = RandomRange(random, 0, Platform_Prefab.Length);
+            GameObject platformPrefab = i == 0 ? StartPlatform_Prefab : Platform_Prefab[prefabIndex];
             GameObject platform = Instantiate(platformPrefab, transform);
             platform.transform.localPosition = CalculatePlatformPosition(i);
             if (i > 0)
@@ -31,7 +31,7 @@ public class LevelGenerator : MonoBehaviour
         }
         
         FinishPlatform.transform.localPosition = CalculatePlatformPosition(platformsCount);
-        CylinderRoot.localScale = new Vector3(1, platformsCount * DistanceBetweenPlatforms + ExtraCylinderScale, 1);
+        CylinderRoot.localScale = new Vector3(1, platformsCount * DistanceBetweenPlatforms + AdditionalCylinderScale, 1);
     }
     private int RandomRange(Random random,int min, int maxExclusive) 
     {

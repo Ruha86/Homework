@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
 
     public void ReachFinish()
     {
-        GameState.OnPlayerReachedFinish();
+        GameState.PlayerIsOnFinishPlatform();
         Rigidbody.velocity = Vector3.zero;
 
     }

@@ -3,19 +3,19 @@ using UnityEngine;
 public class Controls : MonoBehaviour
 {
     public Transform Level;
-    public float Sensitivity;
+    public float sensitivity;
 
-    private Vector3 _previousMousePosition;
+    private Vector3 _previousMousePos;
 
     void Update()
     {
         if (Input.GetMouseButton(0)) 
         {
-            Vector3 delta = Input.mousePosition - _previousMousePosition;
-            Level.Rotate(0, -delta.x * Sensitivity, 0);
+            Vector3 delta = Input.mousePosition - _previousMousePos;
+            Level.Rotate(0, -delta.x * sensitivity, 0);
         }
 
-        _previousMousePosition = Input.mousePosition;
+        _previousMousePos = Input.mousePosition;
         
     }
 }
