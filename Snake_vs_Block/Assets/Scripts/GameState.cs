@@ -1,0 +1,41 @@
+using UnityEngine;
+
+public class GameState : MonoBehaviour
+{
+    public Player Controls;
+    public GameObject LoseScreen;
+    public GameObject WinScreen;
+
+    public enum State
+    {
+        Play,
+        Win,
+        Lose,
+    }
+
+    private void Awake()
+    {
+        LoseScreen.SetActive(false);
+        WinScreen.SetActive(false);
+    }
+
+    public State CurrentState { get; private set; }
+
+    public void OnPlayerDead() 
+    {
+        if (CurrentState != State.Play) return;
+        CurrentState = State.Lose;
+        Controls.enabled = false;
+        Debug.Log("Game Over!");
+        LoseScreen.SetActive(true);
+    }
+
+    public void OnPlayerWin() 
+    {
+        if (CurrentState != State.Play) return;
+        CurrentState = State.Lose;
+        Controls.enabled = false;
+        Debug.Log("You win!");
+        WinScreen.SetActive(true);
+    }
+}

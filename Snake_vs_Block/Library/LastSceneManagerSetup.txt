@@ -1,1 +1,5 @@
-sceneSetups: []
+sceneSetups:
+- path: Assets/Scenes/Snake_VS_Blocks.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
