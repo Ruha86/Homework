@@ -1,41 +1,48 @@
-using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-    public GameState GameState; // holding game state
-    public Transform snakeHead; // transform of snake head
-    public TextMesh text;
+    private List<Transform> _tails = new List<Transform>();
+    private float _boneDistance;
+    public GameObject _bonePrefab;// префаб тела змеи 
 
-    public int value; // переменная для поглощения balls
-    public int snakeHealth = 1; // count of balls
-    public int snakeLength = 1; // count of balls
-    private SnakeTail _snakeTail; // tail of the snake
+    public GameObject food;
 
-    private Vector3 _previousMousePosition;
-    public float moveSpeed;
-    public float Sensitivity;
-    public float LeftBorder = -2.2f;
-    public float RightBorder = 2.2f;
+    public GameState GameState; // состояние игры
+    public Transform SnakeHead; // трансформ головы змеи
+    public TextMesh Text;
 
+    private Vector3 _previousMousePosition; // предыдущаа позиция мыши
+    public float moveSpeed; // скорость движения змейки вперед
+    public float Sensitivity; // чувствительность мыши
+    public float LeftBorder = -2.2f; // левая граница
+    public float RightBorder = 2.2f;    // правая граница
 
+    private int snakeHealth = 1; // здоровье змейки
 
-    // Start is called before the first frame update
     void Start()
     {
-        text.text = snakeHealth.ToString();
-        _snakeTail = GetComponent<SnakeTail>();
+        Text.text = snakeHealth.ToString(); // отображение числа здоровья (шаров в змейке)
     }
 
-    // Update is called once per frame
     void Update()
     {
+        MoveHead();
+        MoveTail();
+    }
+
+    // движение змейки мышью по оси Х
+    private void MoveHead() 
+    {
+        // постоянное движение вперед
         transform.position += Vector3.forward * moveSpeed * Time.deltaTime;
-        
-        if (Input.GetMouseButton(0)) 
+
+        //при зажатой клавише ЛКМ двигается вправа и влево по оси Х 
+        if (Input.GetMouseButton(0))
         {
+            // границы слева и справа
             if (transform.position.x <= LeftBorder)
             {
                 transform.position = new Vector3(LeftBorder, transform.position.y, transform.position.z);
@@ -44,14 +51,46 @@ public class Player : MonoBehaviour
             {
                 transform.position = new Vector3(RightBorder, transform.position.y, transform.position.z);
             }
-            else { mouseMover(); }
+            else 
+            {
+                Vector3 delta = Input.mousePosition - _previousMousePosition;
+                transform.position = new Vector3(transform.position.x + delta.x * Sensitivity * Time.deltaTime, 
+                    transform.position.y,
+                    transform.position.z);
+            }
         }
         _previousMousePosition = Input.mousePosition;
     }
 
-    private void mouseMover() 
+    private void MoveTail()
     {
-        Vector3 delta = Input.mousePosition - _previousMousePosition;
-        transform.position = new Vector3(transform.position.x + delta.x * Sensitivity * Time.deltaTime, transform.position.y, transform.position.z);
+        float sqrDistance = Mathf.Sqrt(_boneDistance);
+        Vector3 previousPosition = transform.position;
+
+        foreach (var bone in _tails) 
+        {
+            if ((bone.position - previousPosition).sqrMagnitude > sqrDistance)
+            {
+                Vector3 currentBonePosition = bone.position;
+                bone.position = previousPosition;
+                previousPosition = currentBonePosition;
+            }
+            else 
+            {
+                break;
+            }
+        }
+    }
+
+    private void OnTriggerEnter(Collider food)
+    {
+        if (food.TryGetComponent(out Food eat))
+        {
+            Destroy(food.gameObject);
+
+            GameObject bone = Instantiate(_bonePrefab);
+            _tails.Add(bone.transform);
+
+        }
     }
 }

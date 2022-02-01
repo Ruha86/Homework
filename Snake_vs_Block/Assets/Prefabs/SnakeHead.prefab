@@ -127,11 +127,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameState: {fileID: 0}
-  snakeHead: {fileID: 2290828327598633342}
-  text: {fileID: 8098539368153801361}
-  value: 0
-  snakeHealth: 1
-  snakeLength: 1
+  SnakeHead: {fileID: 2290828327598633342}
+  SnakeBody_prefab: {fileID: 3142899855353794649, guid: 8d998865849ffe54da10db2e3f24e47e, type: 3}
+  Text: {fileID: 8098539368153801361}
   moveSpeed: 1
   Sensitivity: 0.3
   LeftBorder: -2.3

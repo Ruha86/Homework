@@ -7,18 +7,16 @@ public class CameraFollows : MonoBehaviour
     public GameObject Player;
     public Transform Camera;
     
-    public float camera_YOffset;
-    public float camera_ZOffset;
+    public float camera_YOffset;    // отступ по оси Y
+    public float camera_ZOffset;    // отступ по оси Z
 
-    private float xAngle;
+    public float xAngle = 50f; // угол наклона камеры по оси Х
 
-    // Start is called before the first frame update
     void Start()
     {
         Camera.Rotate(xAngle, 0, 0);
     }
 
-    // Update is called once per frame
     void Update()
     {
         Camera.transform.position = new Vector3(0.0f,
