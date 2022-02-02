@@ -4,37 +4,40 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    private List<Transform> _tails = new List<Transform>();
-    private float _boneDistance;
-    public GameObject _bonePrefab;// префаб тела змеи 
-
-    public GameObject food;
-
     public GameState GameState; // состояние игры
     public Transform SnakeHead; // трансформ головы змеи
     public TextMesh Text;
 
+    private SnakeTail snakeTail;
+    public Rigidbody snakeRB;
+
     private Vector3 _previousMousePosition; // предыдущаа позиция мыши
     public float moveSpeed; // скорость движения змейки вперед
     public float Sensitivity; // чувствительность мыши
-    public float LeftBorder = -2.2f; // левая граница
-    public float RightBorder = 2.2f;    // правая граница
+    private float LeftBorder = -2.3f; // левая граница
+    private float RightBorder = 2.3f;    // правая граница
 
-    private int snakeHealth = 1; // здоровье змейки
+    private List<Transform> BodyParts = new List<Transform>();
+
+    private int value = 1;
+    public int Length = 1;
+
+    public int snakeHealth = 1; // здоровье змейки
+    
 
     void Start()
     {
+        snakeRB = GetComponent<Rigidbody>();
+        snakeTail = GetComponent<SnakeTail>();
         Text.text = snakeHealth.ToString(); // отображение числа здоровья (шаров в змейке)
     }
 
     void Update()
     {
         MoveHead();
-        MoveTail();
     }
 
-    // движение змейки мышью по оси Х
-    private void MoveHead() 
+    private void MoveHead()
     {
         // постоянное движение вперед
         transform.position += Vector3.forward * moveSpeed * Time.deltaTime;
@@ -51,10 +54,10 @@ public class Player : MonoBehaviour
             {
                 transform.position = new Vector3(RightBorder, transform.position.y, transform.position.z);
             }
-            else 
+            else
             {
                 Vector3 delta = Input.mousePosition - _previousMousePosition;
-                transform.position = new Vector3(transform.position.x + delta.x * Sensitivity * Time.deltaTime, 
+                transform.position = new Vector3(transform.position.x + delta.x * Sensitivity * Time.deltaTime,
                     transform.position.y,
                     transform.position.z);
             }
@@ -62,35 +65,48 @@ public class Player : MonoBehaviour
         _previousMousePosition = Input.mousePosition;
     }
 
-    private void MoveTail()
+    public void OnCollisionEnter(Collision collision)
     {
-        float sqrDistance = Mathf.Sqrt(_boneDistance);
-        Vector3 previousPosition = transform.position;
-
-        foreach (var bone in _tails) 
+        if (collision.gameObject.tag == "Food")
         {
-            if ((bone.position - previousPosition).sqrMagnitude > sqrDistance)
+            value = collision.gameObject.GetComponent<Food>().Value;
+            snakeHealth += value;
+            Text.text = snakeHealth.ToString();
+            Destroy(collision.gameObject);
+
+            for (int i = 0; i < value; i++)
             {
-                Vector3 currentBonePosition = bone.position;
-                bone.position = previousPosition;
-                previousPosition = currentBonePosition;
-            }
-            else 
-            {
-                break;
+                Length ++;
+                snakeTail.AddBody();
             }
         }
-    }
-
-    private void OnTriggerEnter(Collider food)
-    {
-        if (food.TryGetComponent(out Food eat))
+        else if (collision.gameObject.tag == "Block")
         {
-            Destroy(food.gameObject);
+            value = collision.gameObject.GetComponent<Block>().Value;
 
-            GameObject bone = Instantiate(_bonePrefab);
-            _tails.Add(bone.transform);
+            // !!!! переписать пласное отнимание тела до 0, если 0 то смекрть
+            if (value >= snakeHealth)   
+            {
+                GameState.OnPlayerDead();
+                snakeRB.velocity = Vector3.zero;
+            }
+            else
+            {
+                snakeHealth -= value;
+                Text.text = snakeHealth.ToString();
+                Destroy(collision.gameObject);
 
+                for (int i = 0; i < value; i++)
+                {
+                    Length--;
+                    snakeTail.RemoveBody();
+                }
+                
+            }
+        }
+        else if (collision.gameObject.tag == "Finish")
+        {
+            GameState.OnPlayerWin();
         }
     }
 }

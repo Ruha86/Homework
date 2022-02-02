@@ -33,7 +33,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - BlendHeight: 1
-    - Vector1_104cfb9805cf421f9052075ec7a2ffee: 0
+    - Vector1_104cfb9805cf421f9052075ec7a2ffee: 0.1
     m_Colors:
     - Color_c89c823aedfe461cb60fecbb85923be8: {r: 1, g: 0, b: 0, a: 1}
     - _Color_A: {r: 1, g: 0, b: 0, a: 0.5882353}

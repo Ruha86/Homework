@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class Block : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public TextMesh Text;
+    public int Value;
+    private float ColorChange;
+
+
+
     void Start()
     {
-        
+        Text.text = Value.ToString();
+        // ColorChange = Value / 10;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

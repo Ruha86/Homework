@@ -58,12 +58,13 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\GameState.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
-    <Compile Include="Assets\Scripts\CameraFollows.cs" />
-    <Compile Include="Assets\Scripts\Food.cs" />
     <Compile Include="Assets\Scripts\Block.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Assets\Scenes\Shaders\NewUnlitShader.shader" />
+    <Compile Include="Assets\Scripts\Food.cs" />
+    <Compile Include="Assets\Scripts\CameraFollows.cs" />
+    <Compile Include="Assets\Scripts\SnakeTail.cs" />
+    <Compile Include="Assets\Scripts\LevelNumberText.cs" />
+    <Compile Include="Assets\Scripts\MenuController.cs" />
+    <Compile Include="Assets\Scripts\LevelGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
