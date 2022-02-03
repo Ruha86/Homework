@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5652977423816913952}
   - component: {fileID: 5652977423816913955}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -121,7 +121,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5652977423862509586}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0.39999998}
+  m_LocalPosition: {x: 0, y: 0.2, z: 0.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5652977424097150076}
@@ -176,7 +176,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5652977423862509586}
-  m_Text: 4
+  m_Text: 0
   m_OffsetZ: 0
   m_CharacterSize: 0.1
   m_LineSpacing: 1
@@ -217,7 +217,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5652977424097150079}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 1.35}
+  m_LocalPosition: {x: -0, y: 0.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5652977423816913954}
@@ -269,8 +269,9 @@ MonoBehaviour:
   GameState: {fileID: 0}
   SnakeHead: {fileID: 5652977423816913954}
   Text: {fileID: 5652977423862509584}
-  snakeRB: {fileID: 3175261502276473076}
-  moveSpeed: 2
+  snakeBodyRB: {fileID: 3175261502276473076}
+  moveSpeed: 1.5
   Sensitivity: 0.4
-  Length: 1
-  snakeHealth: 1
+  StartLength: 5
+  snakeHealth: 0
+  snakeLength: 0

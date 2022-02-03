@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     public TextMesh Text;
 
     private SnakeTail snakeTail;
-    public Rigidbody snakeRB;
+    public Rigidbody snakeBodyRB;
 
     private Vector3 _previousMousePosition; // предыдущаа позиция мыши
     public float moveSpeed; // скорость движения змейки вперед
@@ -19,17 +19,25 @@ public class Player : MonoBehaviour
 
     private List<Transform> BodyParts = new List<Transform>();
 
-    private int value = 1;
-    public int Length = 1;
+    private int foodValue; // ценность еды
+    private int blockValue; // ценность блоков
 
-    public int snakeHealth = 1; // здоровье змейки
-    
+    [SerializeField]
+    private int StartLength = 5;
+    [SerializeField]
+    private int snakeHealth; // здоровье змейки
+    [SerializeField]
+    private int snakeLength = 0;  // длина змейки
+
 
     void Start()
     {
-        snakeRB = GetComponent<Rigidbody>();
+        snakeBodyRB = GetComponent<Rigidbody>();
         snakeTail = GetComponent<SnakeTail>();
         Text.text = snakeHealth.ToString(); // отображение числа здоровья (шаров в змейке)
+
+        IncreaseSnake(StartLength);
+        Debug.Log($"Health = {snakeHealth}, Length = {snakeLength}");
     }
 
     void Update()
@@ -67,46 +75,67 @@ public class Player : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
+        // Столкновение с едой
         if (collision.gameObject.tag == "Food")
         {
-            value = collision.gameObject.GetComponent<Food>().Value;
-            snakeHealth += value;
-            Text.text = snakeHealth.ToString();
+            foodValue = collision.gameObject.GetComponent<Food>().Value;
+            // snakeHealth += foodValue;
+            // Text.text = snakeHealth.ToString();
             Destroy(collision.gameObject);
-
-            for (int i = 0; i < value; i++)
-            {
-                Length ++;
-                snakeTail.AddBody();
-            }
+            IncreaseSnake(foodValue);
+            Debug.Log($"FOOD value = {foodValue}: Health = {snakeHealth}, Length = {snakeLength}");
         }
-        else if (collision.gameObject.tag == "Block")
-        {
-            value = collision.gameObject.GetComponent<Block>().Value;
 
-            // !!!! переписать пласное отнимание тела до 0, если 0 то смекрть
-            if (value >= snakeHealth)   
+        // Столкновение с блоком
+        if (collision.gameObject.tag == "Block")
+        {
+            blockValue = collision.gameObject.GetComponent<Block>().Value;
+
+            if (snakeHealth > blockValue)
+            {
+                Destroy(collision.gameObject);
+                //snakeHealth -= blockValue;
+                DecreaseSnake(blockValue);
+                Debug.Log($"BLOCK value = {blockValue}: Health = {snakeHealth}, Length = {snakeLength}");
+            }
+
+            if (snakeHealth <= blockValue)
             {
                 GameState.OnPlayerDead();
-                snakeRB.velocity = Vector3.zero;
-            }
-            else
-            {
-                snakeHealth -= value;
-                Text.text = snakeHealth.ToString();
-                Destroy(collision.gameObject);
-
-                for (int i = 0; i < value; i++)
-                {
-                    Length--;
-                    snakeTail.RemoveBody();
-                }
-                
+                snakeBodyRB.velocity = Vector3.zero;
+                Debug.Log($"BLOCK: Snake Dead");
             }
         }
-        else if (collision.gameObject.tag == "Finish")
+
+    }
+
+    private void OnTriggerEnter(Collider collider)
+    {
+        if (collider.gameObject.tag == "Finish")
         {
             GameState.OnPlayerWin();
+        }
+    }
+
+    private void IncreaseSnake(int Value) 
+    {
+        for (int i = 0; i < Value; i++) 
+        {
+            snakeLength++;
+            snakeHealth++;
+            snakeTail.AddBody();
+            Text.text = snakeHealth.ToString();
+        }
+    }
+
+    private void DecreaseSnake(int Value) 
+    {
+        for (int i = 0; i < Value; i++)
+        {
+            snakeLength--;
+            snakeHealth--;
+            snakeTail.RemoveBody();
+            Text.text = snakeHealth.ToString();
         }
     }
 }
