@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5652977423816913954}
   - component: {fileID: 5652977423816913953}
   - component: {fileID: 5652977423816913952}
-  - component: {fileID: 5652977423816913955}
+  - component: {fileID: 5776256756801072994}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -60,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fa4adc137cb7c904aae9a0eb83d37ea4, type: 2}
+  - {fileID: 2100000, guid: 64bc1a82bc451f643a6470003f0999f7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -82,7 +82,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &5652977423816913955
+--- !u!135 &5776256756801072994
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -268,10 +268,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameState: {fileID: 0}
   SnakeHead: {fileID: 5652977423816913954}
-  Text: {fileID: 5652977423862509584}
+  Health: {fileID: 5652977423862509584}
   snakeBodyRB: {fileID: 3175261502276473076}
   moveSpeed: 1.5
   Sensitivity: 0.4
-  StartLength: 5
-  snakeHealth: 0
+  foodCounter: 0
+  snakeHealth: 4
   snakeLength: 0

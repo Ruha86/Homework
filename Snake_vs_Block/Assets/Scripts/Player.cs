@@ -1,12 +1,13 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
+    
     public GameState GameState; // состояние игры
     public Transform SnakeHead; // трансформ головы змеи
-    public TextMesh Text;
+    public TextMesh Health;
 
     private SnakeTail snakeTail;
     public Rigidbody snakeBodyRB;
@@ -21,22 +22,21 @@ public class Player : MonoBehaviour
 
     private int foodValue; // ценность еды
     private int blockValue; // ценность блоков
+    
+    [SerializeField]
+    public int snakeHealth = 4; // здоровье змейки
+    [SerializeField]
+    public int snakeLength = 1;  // длина змейки
 
-    [SerializeField]
-    private int StartLength = 5;
-    [SerializeField]
-    private int snakeHealth; // здоровье змейки
-    [SerializeField]
-    private int snakeLength = 0;  // длина змейки
+    public int foodCounter = 0;
 
 
     void Start()
     {
         snakeBodyRB = GetComponent<Rigidbody>();
         snakeTail = GetComponent<SnakeTail>();
-        Text.text = snakeHealth.ToString(); // отображение числа здоровья (шаров в змейке)
-
-        IncreaseSnake(StartLength);
+        Health.text = snakeHealth.ToString(); // отображение числа здоровья (шаров в змейке)
+        IncreaseSnake(snakeHealth);
         Debug.Log($"Health = {snakeHealth}, Length = {snakeLength}");
     }
 
@@ -79,10 +79,14 @@ public class Player : MonoBehaviour
         if (collision.gameObject.tag == "Food")
         {
             foodValue = collision.gameObject.GetComponent<Food>().Value;
-            // snakeHealth += foodValue;
-            // Text.text = snakeHealth.ToString();
+
+            foodCounter += foodValue;
+            snakeHealth += foodValue; // прибавим значение к здоровью
+            Health.text = snakeHealth.ToString();
+
             Destroy(collision.gameObject);
             IncreaseSnake(foodValue);
+
             Debug.Log($"FOOD value = {foodValue}: Health = {snakeHealth}, Length = {snakeLength}");
         }
 
@@ -91,51 +95,40 @@ public class Player : MonoBehaviour
         {
             blockValue = collision.gameObject.GetComponent<Block>().Value;
 
+            Debug.Log($"BLOCK value = {blockValue}");
+            Debug.Log($"Health current = {snakeHealth}, Length current = {snakeLength}");
+
             if (snakeHealth > blockValue)
             {
+                snakeHealth -= blockValue;
                 Destroy(collision.gameObject);
-                //snakeHealth -= blockValue;
                 DecreaseSnake(blockValue);
-                Debug.Log($"BLOCK value = {blockValue}: Health = {snakeHealth}, Length = {snakeLength}");
+                Health.text = snakeHealth.ToString();
+                Debug.Log($"Health remained = {snakeHealth}, Length remained = {snakeLength}");
             }
-
-            if (snakeHealth <= blockValue)
+            if (snakeHealth < 0)
             {
                 GameState.OnPlayerDead();
                 snakeBodyRB.velocity = Vector3.zero;
-                Debug.Log($"BLOCK: Snake Dead");
             }
         }
-
     }
 
-    private void OnTriggerEnter(Collider collider)
-    {
-        if (collider.gameObject.tag == "Finish")
-        {
-            GameState.OnPlayerWin();
-        }
-    }
-
-    private void IncreaseSnake(int Value) 
+    public void IncreaseSnake(int Value) 
     {
         for (int i = 0; i < Value; i++) 
         {
             snakeLength++;
-            snakeHealth++;
             snakeTail.AddBody();
-            Text.text = snakeHealth.ToString();
         }
     }
 
-    private void DecreaseSnake(int Value) 
+    public void DecreaseSnake(int Value) 
     {
         for (int i = 0; i < Value; i++)
         {
             snakeLength--;
-            snakeHealth--;
             snakeTail.RemoveBody();
-            Text.text = snakeHealth.ToString();
         }
     }
 }
