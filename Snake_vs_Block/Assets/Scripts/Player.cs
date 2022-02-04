@@ -4,10 +4,11 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-    
+
     public GameState GameState; // состояние игры
     public Transform SnakeHead; // трансформ головы змеи
     public TextMesh Health;
+
 
     private SnakeTail snakeTail;
     public Rigidbody snakeBodyRB;
@@ -22,17 +23,20 @@ public class Player : MonoBehaviour
 
     private int foodValue; // ценность еды
     private int blockValue; // ценность блоков
-    
+
     [SerializeField]
     public int snakeHealth = 4; // здоровье змейки
     [SerializeField]
     public int snakeLength = 1;  // длина змейки
 
-    public int foodCounter = 0;
+    public Text FoodCounter;
+    public int foodCounter;
 
 
     void Start()
     {
+        foodCounter = 0;
+        FoodCounter.text = foodCounter.ToString();
         snakeBodyRB = GetComponent<Rigidbody>();
         snakeTail = GetComponent<SnakeTail>();
         Health.text = snakeHealth.ToString(); // отображение числа здоровья (шаров в змейке)
@@ -43,6 +47,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         MoveHead();
+        FoodCounter.text = foodCounter.ToString();
     }
 
     private void MoveHead()
@@ -73,62 +78,96 @@ public class Player : MonoBehaviour
         _previousMousePosition = Input.mousePosition;
     }
 
+    // Обработка столкновений с блоком или едой
     public void OnCollisionEnter(Collision collision)
     {
-        // Столкновение с едой
+        // При столкновении с едой
         if (collision.gameObject.tag == "Food")
         {
             foodValue = collision.gameObject.GetComponent<Food>().Value;
 
             foodCounter += foodValue;
+
             snakeHealth += foodValue; // прибавим значение к здоровью
             Health.text = snakeHealth.ToString();
-
             Destroy(collision.gameObject);
             IncreaseSnake(foodValue);
 
             Debug.Log($"FOOD value = {foodValue}: Health = {snakeHealth}, Length = {snakeLength}");
+            
         }
 
-        // Столкновение с блоком
+        // При столкновении с блоком
         if (collision.gameObject.tag == "Block")
         {
+            // Получаем прочность блока
             blockValue = collision.gameObject.GetComponent<Block>().Value;
 
-            Debug.Log($"BLOCK value = {blockValue}");
-            Debug.Log($"Health current = {snakeHealth}, Length current = {snakeLength}");
+            // Вывод информации о столкновении в консоль:
+            // прочность блока
+            //Debug.Log($"BLOCK value = {blockValue}"); 
+            // текущее здоровье и длина змейки
+            //Debug.Log($"Health current = {snakeHealth}, Length current = {snakeLength}"); 
+            ShowBlockHitInfo();
 
-            if (snakeHealth > blockValue)
+            // если здоровье змейки меньше прочности блока, то  GameOver!
+            if (snakeHealth <= blockValue)
             {
+                // Вывод информации о столкновении в консоль:
+                // прочность блока
+                //Debug.Log($"BLOCK value = {blockValue}");
+                // текущее здоровье и длина змейки
+                //Debug.Log($"Health current = {snakeHealth}, Length current = {snakeLength}");
+                ShowBlockHitInfo();
+
                 snakeHealth -= blockValue;
-                Destroy(collision.gameObject);
-                DecreaseSnake(blockValue);
-                Health.text = snakeHealth.ToString();
+                // GameOver!
+                GameState.OnPlayerDead();
+                // останавливаем змейку
+                snakeBodyRB.velocity = Vector3.zero;
                 Debug.Log($"Health remained = {snakeHealth}, Length remained = {snakeLength}");
             }
-            if (snakeHealth < 0)
+
+            // если здоровье змейки больше прочности блока, то
+            else
             {
-                GameState.OnPlayerDead();
-                snakeBodyRB.velocity = Vector3.zero;
+                //Debug.LogWarning($"Hit Block!");
+                ShowBlockHitInfo();
+
+                // Уничтожаем блок
+                Destroy(collision.gameObject);
+                // Отнимаем от здоровье у змейки прочность блока
+                snakeHealth -= blockValue;
+                // Уменьшаем длину змейки на прочность блока
+                DecreaseSnake(blockValue);
+                // преобразуем здровье змейки в текст
+                Health.text = snakeHealth.ToString();
+                Debug.Log($"Health remained = {snakeHealth}, Length remained = {snakeLength}");
             }
         }
     }
 
-    public void IncreaseSnake(int Value) 
+    public void IncreaseSnake(int Value)
     {
-        for (int i = 0; i < Value; i++) 
+        for (int i = 0; i < Value; i++)
         {
             snakeLength++;
             snakeTail.AddBody();
         }
     }
 
-    public void DecreaseSnake(int Value) 
+    public void DecreaseSnake(int Value)
     {
         for (int i = 0; i < Value; i++)
         {
             snakeLength--;
             snakeTail.RemoveBody();
         }
+    }
+
+    public void ShowBlockHitInfo() 
+    {
+        Debug.LogWarning($"Hit Block! {blockValue}");
+        Debug.Log($"Health current: {snakeHealth}, Length current: {snakeLength}");
     }
 }
