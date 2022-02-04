@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637792971782843070
+      ticks: 637794885965424112
     m_Hash: 2254259636
   m_LockFileStatus:
     m_FilePath: D:/NTI_Learning_CSharp_Unity/Homework/Snake_vs_Block/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637792971784067851
+      ticks: 637794885966204543
     m_Hash: 1495129218
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}

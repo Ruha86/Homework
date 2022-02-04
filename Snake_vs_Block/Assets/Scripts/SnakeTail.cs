@@ -45,6 +45,6 @@ public class SnakeTail : MonoBehaviour
     {
         Destroy(snakeBodies[0].gameObject);
         snakeBodies.RemoveAt(0);
-        positions.RemoveAt(1);
+        positions.RemoveAt(0);
     }
 }

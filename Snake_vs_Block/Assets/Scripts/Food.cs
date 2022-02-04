@@ -1,17 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
+using Random = System.Random;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Food : MonoBehaviour
 {
     public int Value;
     public TextMesh text;
 
-    
+    Random random = new Random();
+
+    private int minFoodValue = 1;
+    private int maxFoodValue = 11;
 
     private void Start()
     {
+        Value = random.Next(minFoodValue, maxFoodValue);
         text.text = Value.ToString();
     }
+
 }

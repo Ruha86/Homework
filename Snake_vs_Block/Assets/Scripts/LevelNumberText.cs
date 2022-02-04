@@ -4,12 +4,26 @@ using UnityEngine.SceneManagement;
 
 public class LevelNumberText : MonoBehaviour
 {
-    public Text text;
+    public Text LevelNumber;
+    public Text FoodCounter;
+
     public GameState GameState;
+
+    int counter;
+
     void Start()
     {
         Scene scene = SceneManager.GetActiveScene();
-        text.text = scene.name;
+        LevelNumber.text = scene.name;
+
+        counter = GetComponent<Player>().foodCounter;
     }
 
+    private void Update()
+    {
+
+        FoodCounter.text = counter.ToString();
+
+        Debug.Log(counter);
+    }
 }
