@@ -270,8 +270,9 @@ MonoBehaviour:
   SnakeHead: {fileID: 5652977423816913954}
   Health: {fileID: 5652977423862509584}
   snakeBodyRB: {fileID: 3175261502276473076}
-  moveSpeed: 1.5
+  moveSpeed: 2
   Sensitivity: 0.4
-  foodCounter: 0
   snakeHealth: 4
-  snakeLength: 0
+  snakeLength: 1
+  FoodCounter: {fileID: 0}
+  foodCounter: 0

@@ -127,7 +127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Value: 1
-  text: {fileID: 8098539368153801361}
+  FoodValue: {fileID: 8098539368153801361}
 --- !u!1 &9045114921813265324
 GameObject:
   m_ObjectHideFlags: 0

@@ -881,8 +881,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7cbdd9f4e0f5fe46b87a85c04b17ff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 7426130264601932588}
+  BlockValue: {fileID: 7426130264601932588}
   Value: 1
+  BlockMat: {fileID: 2100000, guid: 168559ef879b8ba43a50677fcc0095e8, type: 2}
 --- !u!1 &4692656466156173950
 GameObject:
   m_ObjectHideFlags: 0

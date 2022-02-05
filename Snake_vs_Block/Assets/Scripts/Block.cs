@@ -3,22 +3,24 @@ using UnityEngine;
 
 public class Block : MonoBehaviour
 {
-    public TextMesh text;
-
+    public TextMesh BlockValue;
     public int Value;
-    private float ColorChange;
+
+    public Material BlockMat;
 
     Random random = new Random();
 
     private int minBlockValue = 1;
     private int maxBlockValue = 31;
 
+    
     void Start()
     {
         Value = random.Next(minBlockValue, maxBlockValue);
+        BlockValue.text = Value.ToString();
 
-        text.text = Value.ToString();
-        // ColorChange = Value / 10;
+        this.BlockMat.SetFloat("_ColorValue", Value / 20f);
+
     }
-
+    
 }

@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 1600
     height: 827
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Project
   m_RootView: {fileID: 4}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -97,7 +97,7 @@ MonoBehaviour:
     y: 0
     width: 1600
     height: 827
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -174,7 +174,7 @@ MonoBehaviour:
   m_MinSize: {x: 609, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 84
+  controlID: 61
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -199,7 +199,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 19
+  controlID: 62
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -406,23 +406,23 @@ MonoBehaviour:
     m_DrawArea:
       serializedVersion: 2
       x: 0
-      y: 21
+      y: 0
       width: 884
-      height: 735
-    m_Scale: {x: 0.38281247, y: 0.3828125}
-    m_Translation: {x: 442, y: 367.5}
+      height: 756
+    m_Scale: {x: 0.39375, y: 0.39375}
+    m_Translation: {x: 442, y: 378}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -1154.6123
+      x: -1122.5397
       y: -960
-      width: 2309.2246
+      width: 2245.0793
       height: 1920
     m_MinimalGUI: 1
-  m_defaultScale: 0.3828125
+  m_defaultScale: 0.39375
   m_LastWindowPixelSize: {x: 884, y: 756}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
@@ -467,7 +467,7 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: -0.018513188, y: -5.511774, z: 2.0569077}
     speed: 2
-    m_Value: {x: 0.08908616, y: -0.30658618, z: -0.56471086}
+    m_Value: {x: -0.018513188, y: -5.511774, z: 2.0569077}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -516,11 +516,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.20142254, y: -0.004411616, z: 0.0009140228, w: 0.9795057}
     speed: 2
-    m_Value: {x: 0.07972534, y: -0.0000046198447, z: 0.0000033007852, w: 0.9968169}
+    m_Value: {x: -0.20142256, y: 0.004411616, z: -0.00091402285, w: -0.9795057}
   m_Size:
     m_Target: 12.344596
     speed: 2
-    m_Value: 1.3722816
+    m_Value: 12.344596
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -573,23 +573,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: d80a0000
       m_LastClickedID: 0
-      m_ExpandedIDs: 9016feffd616feffd816feff8217feffe026feffc884feffce84feffd084feff7887fefff4b3fefff0b7feff6acafeffd0d0feffa805ffffd2d6fffff6dcffff8cddffff5cfaffff70fbffffd85100000e5500002e550000645500006657000086570000bc5700000a690000
+      m_ExpandedIDs: a6f7ffffe23e0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: FinishPlatform
-        m_OriginalName: FinishPlatform
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -121120
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 9}
       m_SearchString: 
@@ -650,9 +650,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: a03f0000
-    m_LastClickedID: 16288
-    m_ExpandedIDs: 000000004e3d0000543d0000
+    m_SelectedIDs: 6c420000
+    m_LastClickedID: 17004
+    m_ExpandedIDs: 000000005e420000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -680,7 +680,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000004e3d0000
+    m_ExpandedIDs: 000000005e420000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -711,18 +711,18 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: c6230000000000009c0affffa24c000068430000e6460000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Platform
-      m_OriginalName: Platform
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 21456
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 10}
     m_CreateAssetUtility:

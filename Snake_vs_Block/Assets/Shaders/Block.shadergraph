@@ -170,45 +170,9 @@
         },
         {
             "x": 1.0,
-            "y": 0.0,
-            "z": 0.0,
-            "w": 0.13235676288604737
-        },
-        {
-            "x": 1.0,
-            "y": 1.0,
-            "z": 0.0,
-            "w": 0.2676432430744171
-        },
-        {
-            "x": 0.0,
-            "y": 1.0,
-            "z": 0.0,
-            "w": 0.3970550000667572
-        },
-        {
-            "x": 0.0,
             "y": 1.0,
             "z": 1.0,
-            "w": 0.5323567390441895
-        },
-        {
-            "x": 0.0,
-            "y": 0.0,
-            "z": 1.0,
-            "w": 0.6676432490348816
-        },
-        {
-            "x": 1.0,
-            "y": 0.0,
-            "z": 1.0,
-            "w": 0.8323491215705872
-        },
-        {
-            "x": 0.23199999332427979,
-            "y": 0.0022694964427500965,
-            "z": 0.5389999747276306,
-            "w": 0.95588618516922
+            "w": 1.0
         }
     ],
     "m_SerializableAlphaKeys": [
@@ -246,15 +210,15 @@
     "m_Guid": {
         "m_GuidSerialized": "62aacdef-2797-4d92-be9f-fcef4f8c1a51"
     },
-    "m_Name": "ColorChange",
+    "m_Name": "ColorValue",
     "m_DefaultReferenceName": "Vector1_104cfb9805cf421f9052075ec7a2ffee",
-    "m_OverrideReferenceName": "",
+    "m_OverrideReferenceName": "_ColorValue",
     "m_GeneratePropertyBlock": true,
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
-    "m_Value": 0.10000000149011612,
+    "m_Value": 0.0,
     "m_FloatType": 0,
     "m_RangeValues": {
         "x": 0.0,
@@ -481,7 +445,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "99a71304c35640fab13dbfe9d62c5ada",
     "m_Id": 0,
-    "m_DisplayName": "ColorChange",
+    "m_DisplayName": "ColorValue",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
