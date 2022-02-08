@@ -5,8 +5,9 @@ public class Block : MonoBehaviour
 {
     public TextMesh BlockValue;
     public int Value;
+    Color lerpedColor = Color.white;
 
-    public Material BlockMat;
+    // public Material BlockMat;
 
     Random random = new Random();
 
@@ -18,8 +19,9 @@ public class Block : MonoBehaviour
     {
         Value = random.Next(minBlockValue, maxBlockValue);
         BlockValue.text = Value.ToString();
+        lerpedColor = Color.Lerp(Color.red, Color.black, (float)Value / 25f);
+        this.GetComponent<Renderer>().material.color = lerpedColor;
 
-        this.BlockMat.SetFloat("_ColorValue", Value / 20f);
 
     }
     
