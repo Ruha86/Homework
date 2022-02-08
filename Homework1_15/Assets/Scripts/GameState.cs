@@ -11,6 +11,8 @@ public class GameState : MonoBehaviour
     public GameObject LoseScreen;
     public GameObject WinScreen;
 
+    public Particle Fireworks;
+
     public enum State 
     {
         PLAY,

@@ -54,11 +54,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Task_1.6.2\Grenade.cs" />
+    <Compile Include="Assets\Scripts\Task_1.6.2\RestartScene.cs" />
     <Compile Include="Assets\Scripts\Task_1.6.4\Sphere1.cs" />
     <Compile Include="Assets\Scripts\Task_1.6.4\TriggerScript.cs" />
     <Compile Include="Assets\Scripts\Task_1.6.1\CollideSphere.cs" />
     <Compile Include="Assets\Scripts\Task_1.6.3\SphereMovement.cs" />
-    <Compile Include="Assets\Scripts\Task_1.6.2\RestartScene.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
