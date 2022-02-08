@@ -3,22 +3,26 @@ using UnityEngine;
 
 public class Block : MonoBehaviour
 {
-    public TextMesh text;
-
+    public TextMesh BlockValue;
     public int Value;
-    private float ColorChange;
+    Color lerpedColor = Color.white;
+
+    // public Material BlockMat;
 
     Random random = new Random();
 
     private int minBlockValue = 1;
     private int maxBlockValue = 31;
 
+    
     void Start()
     {
         Value = random.Next(minBlockValue, maxBlockValue);
+        BlockValue.text = Value.ToString();
+        lerpedColor = Color.Lerp(Color.red, Color.black, (float)Value / 25f);
+        this.GetComponent<Renderer>().material.color = lerpedColor;
 
-        text.text = Value.ToString();
-        // ColorChange = Value / 10;
+
     }
-
+    
 }
