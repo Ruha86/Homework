@@ -4,7 +4,7 @@ using UnityEngine;
 public class Food : MonoBehaviour
 {
     public int Value;
-    public TextMesh FoodValue;
+    public TextMesh text;
 
     Random random = new Random();
 
@@ -14,7 +14,7 @@ public class Food : MonoBehaviour
     private void Start()
     {
         Value = random.Next(minFoodValue, maxFoodValue);
-        FoodValue.text = Value.ToString();
+        text.text = Value.ToString();
     }
 
 }

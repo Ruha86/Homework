@@ -104,12 +104,20 @@ public class Player : MonoBehaviour
             blockValue = collision.gameObject.GetComponent<Block>().Value;
 
             // Вывод информации о столкновении в консоль:
+            // прочность блока
+            //Debug.Log($"BLOCK value = {blockValue}"); 
+            // текущее здоровье и длина змейки
+            //Debug.Log($"Health current = {snakeHealth}, Length current = {snakeLength}"); 
             ShowBlockHitInfo();
 
             // если здоровье змейки меньше прочности блока, то  GameOver!
             if (snakeHealth <= blockValue)
             {
                 // Вывод информации о столкновении в консоль:
+                // прочность блока
+                //Debug.Log($"BLOCK value = {blockValue}");
+                // текущее здоровье и длина змейки
+                //Debug.Log($"Health current = {snakeHealth}, Length current = {snakeLength}");
                 ShowBlockHitInfo();
 
                 snakeHealth -= blockValue;
