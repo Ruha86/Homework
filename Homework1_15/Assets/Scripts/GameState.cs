@@ -6,11 +6,22 @@ public class GameState : MonoBehaviour
     AudioListener audioListener;
 
     public Controls Controls;
+
+    public GameObject UI;
+    public GameObject LoseScreen;
+    public GameObject WinScreen;
+
     public enum State 
     {
         PLAY,
         WIN,
         LOSE,
+    }
+    private void Awake()
+    {
+        UI.SetActive(true);
+        LoseScreen.SetActive(false);
+        WinScreen.SetActive(false);
     }
 
     public State CurrentState { get; private set; }
@@ -29,8 +40,10 @@ public class GameState : MonoBehaviour
         CurrentState = State.LOSE;
         Controls.enabled = false;
         SoundPause(true);
+        UI.SetActive(false);
+        LoseScreen.SetActive(true);
         Debug.Log("Game Over! Sorry, you lose!");
-        ReloadLevel();
+        // ReloadLevel();
     }
 
     public void PlayerIsOnFinishPlatform()
@@ -40,9 +53,11 @@ public class GameState : MonoBehaviour
         CurrentState = State.WIN;
         Controls.enabled = false;
         SoundPause(true);
+        UI.SetActive(false);
+        WinScreen.SetActive(true);
         LevelIndex++;
         Debug.Log("You win!");
-        ReloadLevel();
+        // ReloadLevel();
     }
     public int LevelIndex 
     {
@@ -55,7 +70,7 @@ public class GameState : MonoBehaviour
     }
     private const string LevelIndexKey = "LevelIndex";
 
-    private void ReloadLevel() 
+    public void ReloadLevel() 
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         SoundPause(false);
